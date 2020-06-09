@@ -36,21 +36,23 @@ header .icons {
 }
 
 .content main section .show .right {
-	background: #9CF;
+	/*! background: #9CF; */
 	display: flex;
-	/*! flex-flow: column nowrap; */
+	flex-flow: column nowrap;
 	width: calc(100%/9*4);
 	/*! flex-flow: column nowrap; */
-	flex-direction: column;
+	/*! flex-direction: column; */
 }
 
 .content main section .show .right .show_item {
-	background: #CC9;
+	/*! background: #CC9; */
 	flex: 0 1 50%;
 }
 
 .content main section .show .right .show_item .box {
 	width: 100%;
+	height: 100%;
+	display: flex;
 }
 
 .content main section .show .right .show_item .box .item {
@@ -61,6 +63,15 @@ header .icons {
 	width: 50%;
 }
 
-.content .wrap main section .show .right .show_item .box .item .info {
+.content main section .show .right .show_item .box .item .info {
 	width: 50%;
+	/*! padding-bottom: 0.75rem; */
+}
+.content main section .show .right .show_item .box .item .info .price {
+	width: 100%;
+}
+.show_item .box .item .pic a img {
+	height: 10rem;
+	/*! overflow: hidden; */
+	/*! width: 15rem; */
 }

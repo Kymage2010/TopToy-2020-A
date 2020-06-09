@@ -200,7 +200,7 @@ h4 {
 }
 
 .box .item .pic a img {
-	/*! height: 14rem; */
+	height: 8.5rem;
 }
 
 .box .item .info {
@@ -208,16 +208,19 @@ h4 {
 	flex-flow: row wrap;
 	justify-content: end;
 	align-items: center;
+	padding: 0.75rem;
 }
 
 .box .item .info .name {
 	width: 100%;
-	padding: 0.75rem;
+	/*! padding: 0.75rem; */
+	padding-bottom: 0.75rem;
 }
 
 .box .item .info .icon {
 	/*! padding: 0.75rem; */
-	margin: 0.75rem;
+	/*! margin: 0.75rem; */
+	margin-left: 0.75rem;
 }
 
 header .wrap {
@@ -247,7 +250,7 @@ header .logo img {
 }
 
 .content main section .show .slider {
-	background: #FFC;
+	/*! background: #FFC; */
 	width: 100%;
 }
 
@@ -256,7 +259,7 @@ header .logo img {
 }
 
 .content main section .show .right {
-	background: #9CF;
+	/*! background: #9CF; */
 	display: none;
 }
 
@@ -293,7 +296,7 @@ header .icons {
 	font-weight: 700;
 	line-height: 2rem;
 	white-space: nowrap;
-	padding: 0.75rem;
+	/*! padding: 0.75rem; */
 	/*! width: 75%; */
 	text-align: right;
 }
@@ -370,6 +373,8 @@ header .icons {
 	transition: background-image ease-in-out 0.3s;
 	/*! width: 2rem; */
 	border-radius: 1rem;
+	/*! margin-left: 0.75rem; */
+	/*! margin-right: 0.75rem; */
 }
 
 .favorite:hover,
@@ -438,4 +443,7 @@ header .icons {
 footer {
 	background: #FF6E40;
 	margin-top: 0.75rem;
+}
+.content main section .show .slider .box .item .pic.new a img {
+	height: 16rem;
 }
