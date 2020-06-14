@@ -11,7 +11,6 @@
     <link href="css/style-wide.css" rel="stylesheet" type="text/css" media="only screen and (min-width:1000px)">
     <link rel="stylesheet" href="css/swiper.min.css">
     <script src="js/jquery-3.4.1.min.js"></script>
-   
     <script src="js/swiper.min.js"></script>
     <script src="js/jquery.slimmenu.min.js"></script>
 </head>
@@ -89,15 +88,15 @@
                                     </li>
                                     <li class="parent"><a href="#">Питание и кормление</a></li>
                                     <li class="parent"><a href="#">Прогулки и путешествия</a></li>
-                                    <li class="parent active"><a href="#">Одежда и обувь</a>
+                                    <li class="parent"><a href="#">Одежда и обувь</a>
                                         <ul class="sub_parent">
                                             <li><a href="#">Спортивная</a></li>
                                             <li><a href="#">Для сада</a></li>
                                             <li><a href="#">Для школы</a></li>
                                             <li><a href="#">Для прогулок</a></li>
                                             <li><a href="#">Для путешествий</a></li>
-                                            
-                                        </ul></li>
+                                        </ul>
+                                    </li>
                                     <li class="parent"><a href="#">Хобби</a></li>
                                     <li class="parent"><a href="#">Предметы интерьера</a></li>
                                     <li class="parent"><a href="#">Мебель</a></li>
@@ -484,19 +483,18 @@
         });
 
     </script>
-    <!--<script>
-        $('.parent').on('click', function(){
-  $(this).children('.sub_parent').css({
-    'display': 'none'
-  });
-            }, function() {
-  $(this).children('.sub_parent').css({
-    'display': 'block'
-  });
-});
+    <!-- моя попытка но активный класс не меняется(((-->
+    <script>
+        $(function() {
+            $('ul.accord > li.parent > a').click(function() {
+                $(this).toggleClass('active');
+                $('.sub_parent').hide('slow');
+                $(this).next('.sub_parent').show('slow');
+            });
+        });
 
-    </script>-->
-
+    </script>
+    <!-- конец -->
 </body>
 
 </html>

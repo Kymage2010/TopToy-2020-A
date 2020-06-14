@@ -96,16 +96,6 @@ header .wrap .icons {
     margin-bottom: 1.5rem;
 }
 
-.content .wrap aside .box .item #catalog ul .active a {
-    color: #FF6E40;
-    text-decoration: none;
-}
-
-.content .wrap aside .box .item #catalog ul .active ul li a {
-    color: black;
-    text-decoration: underline;
-}
-
 .content .wrap aside .box .item #catalog ul li a {
     text-decoration: underline;
 }
@@ -126,6 +116,7 @@ header .wrap .icons {
 
 .content .wrap aside .box .item #catalog ul li ul li a {
     font-size: 0.875rem;
+    font-weight: 300;
 }
 
 .review {
@@ -134,4 +125,8 @@ header .wrap .icons {
 
 .menu_adaptive {
     display: block;
+}
+.content .wrap aside .menu_adaptive .box .item #catalog .accord .parent .active {
+	color:#FF6E40;
+	text-decoration: none;
 }

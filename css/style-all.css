@@ -580,10 +580,6 @@ footer {
 	right: 0;
 	background: url(../images/icon_arrow_right.svg) #FF6E40 no-repeat center center;
 	}
-.content .wrap aside .box .item #catalog ul .active ul .active a {
-	color: #FF6E40;
-	text-decoration: none;
-}
 .content .wrap aside .box .item #catalog {
     padding: 1.5rem;
     font-size: 1rem;
@@ -600,3 +596,4 @@ footer {
 .sub_parent {
     display: none;
 }
+
