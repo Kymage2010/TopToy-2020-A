@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width">
     <title>Главная страница</title>
     <link href="css/style-all.css" rel="stylesheet">
-    <link href="css/style-medium.css" rel="stylesheet" type="text/css" media="only screen and (min-width:600px) and (max-width:1225px)">
-    <link href="css/style-wide.css" rel="stylesheet" type="text/css" media="only screen and (min-width:1225px)">
+    <link href="css/style-small.css" rel="stylesheet" type="text/css" media="only screen and (min-width:400px) and (max-width:600px)">
+    <link href="css/style-medium.css" rel="stylesheet" type="text/css" media="only screen and (min-width:600px) and (max-width:1000px)">
+    <link href="css/style-wide.css" rel="stylesheet" type="text/css" media="only screen and (min-width:1000px)">
     <link rel="stylesheet" href="css/swiper.min.css">
     <script src="js/jquery-3.4.1.min.js"></script>
+   
     <script src="js/swiper.min.js"></script>
     <script src="js/jquery.slimmenu.min.js"></script>
 </head>
@@ -31,7 +33,7 @@
                 </div>
             </div>
             <div class="phone">
-                <div class="box">495 123-45-67</div>
+                <div class="box"><a href="tel:84994040615">499 404-06-15</a></div>
             </div>
             <div class="icons">
                 <a href="#">
@@ -45,7 +47,9 @@
                     </div>
                 </a>
                 <a href="#">
-                    <div class="icon log_in"></div>
+                    <div class="icon log_in">
+                        <div class="count">&#10004;</div>
+                    </div>
                 </a>
                 <a href="#">
                     <div class="icon info"></div>
@@ -57,29 +61,95 @@
     <div class="content">
         <div class="wrap">
             <aside>
-                <div class="title">
+                <div class="title_nav">
                     <div class="box">
-                        <h2>Content for class "title" H2 Goes Here</h2>
+                        <h2>Для детей и родителей</h2>
                     </div>
                 </div>
-                <div class="box">
-                    <nav id="catalog">
-                        <ul>
-                            <li><a href="#">ссылка 1</a></li>
-                            <li><a href="#">ссылка 2</a></li>
-                            <li><a href="#">ссылка 3</a></li>
-                            <li><a href="#">ссылка 4</a></li>
-                            <li><a href="#">ссылка 5</a></li>
-                        </ul>
-                    </nav>
+                <div class="menu_adaptive">
+                    <div class="box">
+                        <div class="item">
+                            <nav id="catalog">
+                                <ul class="accord">
+                                    <li class="parent"><a href="#">Игрушки и игры</a>
+                                        <ul class="sub_parent">
+                                            <li><a href="#">Развивающие</a></li>
+                                            <li><a href="#">Мягкие</a></li>
+                                            <li><a href="#">Куклы и фигуры</a></li>
+                                            <li><a href="#">Конструкторы</a></li>
+                                            <li><a href="#">Настольные</a></li>
+                                            <li><a href="#">Радиоуправляемые</a></li>
+                                            <li><a href="#">Музыкальные</a></li>
+                                            <li><a href="#">Спортивные</a></li>
+                                            <li><a href="#">Логические</a></li>
+                                            <li><a href="#">Командные</a></li>
+                                            <li><a href="#">Активные</a></li>
+                                            <li><a href="#">Водные</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="parent"><a href="#">Питание и кормление</a></li>
+                                    <li class="parent"><a href="#">Прогулки и путешествия</a></li>
+                                    <li class="parent active"><a href="#">Одежда и обувь</a>
+                                        <ul class="sub_parent">
+                                            <li><a href="#">Спортивная</a></li>
+                                            <li><a href="#">Для сада</a></li>
+                                            <li><a href="#">Для школы</a></li>
+                                            <li><a href="#">Для прогулок</a></li>
+                                            <li><a href="#">Для путешествий</a></li>
+                                            
+                                        </ul></li>
+                                    <li class="parent"><a href="#">Хобби</a></li>
+                                    <li class="parent"><a href="#">Предметы интерьера</a></li>
+                                    <li class="parent"><a href="#">Мебель</a></li>
+                                    <li class="parent"><a href="#">Книги</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="title">
+                        <h4><a href="#" title="Обзоры">Обзоры</a></h4>
+                    </div>
+                    <div class="box">
+                        <div class="item">
+                            <div class="box">
+                                <ul>
+                                    <li><a href="#">ссылка #1</a></li>
+                                    <li><a href="#">ссылка #2</a></li>
+                                    <li><a href="#">ссылка #3</a></li>
+                                    <li><a href="#">ссылка #4</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </aside>
             <main>
                 <div class="filters">
                     <div class="filter-all">
-                        <div class="box">Content for class "filter-all" Goes Here</div>
+                        <!-- Показываем всегда-->
+                        <div class="box">
+                            <div class="group">
+                                <div class="title">Кому:</div>
+                                <div class="filter">Мальчикам</div>
+                                <div class="filter active">Девочкам</div>
+                                <div class="filter">Родителям</div>
+                            </div>
+                            <div class="group">
+                                <div class="title">Возраст:</div>
+                                <div class="filter">0-0,5</div>
+                                <div class="filter">0,5-1</div>
+                                <div class="filter active">1-3</div>
+                                <div class="filter">3-5</div>
+                                <div class="filter">5-7</div>
+                                <div class="filter">7-12</div>
+                                <div class="filter">12+</div>
+                            </div>
+                        </div>
                     </div>
                     <div class="filter-spec">
+                        <!-- показываем тольков разделах -->
                         <div class="box">Content for class "filter-spec" Goes Here</div>
                     </div>
                 </div>
@@ -106,9 +176,26 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <div class="pic hit">
+                                                    <a href="#" title="Название товара"><img src="images/6909376-1.jpg" alt=" "></a>
+                                                </div>
+                                                <div class="info">
+                                                    <div class="name"><a href="#">Content for class "prop" Goes Here длинное название</a></div>
+                                                    <div class="price">28 350</div>
+                                                    <div class="bracket icon">
+                                                        <a href="#" title="Товар в корзине"> </a>
+                                                    </div>
+                                                    <div class="favorite icon">
+                                                        <a href="#" title="В избранное"> </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="nav prev"></div>
-                                    <div class="nav next"></div>
+                                    <div class="arrow prev"></div>
+                                    <div class="arrow next"></div>
                                 </div>
                             </div>
                         </div>
@@ -135,7 +222,7 @@
                             <div class="show_item">
                                 <div class="box">
                                     <div class="item">
-                                        <div class="pic percent">
+                                        <div class="pic discount">
                                             <a href="#" title="Название товара"><img src="images/10726397-1.jpg" alt=" "></a>
                                         </div>
                                         <div class="info">
@@ -156,7 +243,7 @@
                 </section>
                 <section>
                     <div class="title">
-                        <h4><a href="#">Скидки</a></h4>
+                        <h4><a href="#">Товары со скидками</a></h4>
                     </div>
                     <!-- -->
                     <div class="box">
@@ -166,7 +253,7 @@
                             </div>
                             <div class="info">
                                 <div class="name"><a href="#">Content for class "prop" Goes Here</a></div>
-                                <div class="price">350</div>
+                                <div class="price">56 350</div>
                                 <div class="icon bracket active">
                                     <a href="#" title="Товар в корзине"> </a>
                                 </div>
@@ -185,7 +272,7 @@
                             </div>
                             <div class="info">
                                 <div class="name"><a href="#">Ну очень длинное название какой-то лабуды</a></div>
-                                <div class="price">1 178</div>
+                                <div class="price">178</div>
                                 <div class="bracket icon">
                                     <a href="#" title="Положить в корзину"> </a>
                                 </div>
@@ -214,10 +301,153 @@
                             </div>
                         </div>
                     </div>
+                    <div class="box medium">
+                        <div class="item">
+                            <div class="big">
+                                <h2><a href="#" title="Товары сос кидками">Все товары со скидками</a></h2>
+                            </div>
+                        </div>
+                    </div>
                     <!-- -->
                 </section>
-                <section></section>
-                <section></section>
+                <section>
+                    <div class="title">
+                        <h4><a href="#">Новинки</a></h4>
+                    </div>
+                    <!-- -->
+                    <div class="box">
+                        <div class="item">
+                            <div class="pic new">
+                                <a href="#" title="Название товара"><img src="images/base.SC940.jpg" alt=" "></a>
+                            </div>
+                            <div class="info">
+                                <div class="name"><a href="#">Content for class "prop" Goes Here</a></div>
+                                <div class="price">350</div>
+                                <div class="bracket icon">
+                                    <a href="#" title="Товар в корзине"> </a>
+                                </div>
+                                <div class="favorite icon">
+                                    <a href="#" title="В избранное"> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -->
+                    <!-- -->
+                    <div class="box">
+                        <div class="item">
+                            <div class="pic new">
+                                <a href="#"><img src="images/full_7Pg4mrk2.jpg" alt=" "></a>
+                            </div>
+                            <div class="info">
+                                <div class="name"><a href="#">название какой-то лабуды </a></div>
+                                <div class="price">1 178</div>
+                                <div class="bracket icon">
+                                    <a href="#" title="Положить в корзину"> </a>
+                                </div>
+                                <div class="favorite icon">
+                                    <a href="#" title="Товар в избранном"> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -->
+                    <!-- -->
+                    <div class="box">
+                        <div class="item">
+                            <div class="pic new">
+                                <a href="#"><img src="images/8261161-1.jpg" alt=" "></a>
+                            </div>
+                            <div class="info">
+                                <div class="name"><a href="#">Content for class "prop" Goes Here</a></div>
+                                <div class="price">21 977</div>
+                                <div class="bracket icon">
+                                    <a href="#" title="Положить в корзину"> </a>
+                                </div>
+                                <div class="favorite icon">
+                                    <a href="#" title="В избранное"> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -->
+                    <div class="box medium">
+                        <div class="item">
+                            <div class="big">
+                                <h2><a href="#" title="Товары сос кидками">Все новинки</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="title">
+                        <h4><a href="#">Хиты продаж</a></h4>
+                    </div>
+                    <!-- -->
+                    <div class="box">
+                        <div class="item">
+                            <div class="pic hit">
+                                <a href="#" title="Название товара"><img src="images/7845675-1.jpg" alt=" "></a>
+                            </div>
+                            <div class="info">
+                                <div class="name"><a href="#">Content for class "prop" Goes Here</a></div>
+                                <div class="price">350</div>
+                                <div class="bracket icon">
+                                    <a href="#" title="Товар в корзине"> </a>
+                                </div>
+                                <div class="favorite icon">
+                                    <a href="#" title="В избранное"> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -->
+                    <!-- -->
+                    <div class="box">
+                        <div class="item">
+                            <div class="pic hit">
+                                <a href="#"><img src="images/full_7Pg4mrk2.jpg" alt=" "></a>
+                            </div>
+                            <div class="info">
+                                <div class="name"><a href="#">название какой-то лабуды </a></div>
+                                <div class="price">1 178</div>
+                                <div class="bracket icon">
+                                    <a href="#" title="Положить в корзину"> </a>
+                                </div>
+                                <div class="favorite icon">
+                                    <a href="#" title="Товар в избранном"> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -->
+                    <!-- -->
+                    <div class="box">
+                        <div class="item">
+                            <div class="pic hit">
+                                <a href="#"><img src="images/8261161-1.jpg" alt=" "></a>
+                            </div>
+                            <div class="info">
+                                <div class="name"><a href="#">Content for class "prop" Goes Here</a></div>
+                                <div class="price">21 977</div>
+                                <div class="bracket icon">
+                                    <a href="#" title="Положить в корзину"> </a>
+                                </div>
+                                <div class="favorite icon">
+                                    <a href="#" title="В избранное"> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -->
+                    <div class="box medium">
+                        <div class="item">
+                            <div class="big">
+                                <h2><a href="#" title="Товары сос кидками">Все хиты продаж</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </main>
         </div>
     </div>
@@ -254,6 +484,19 @@
         });
 
     </script>
+    <!--<script>
+        $('.parent').on('click', function(){
+  $(this).children('.sub_parent').css({
+    'display': 'none'
+  });
+            }, function() {
+  $(this).children('.sub_parent').css({
+    'display': 'block'
+  });
+});
+
+    </script>-->
+
 </body>
 
 </html>

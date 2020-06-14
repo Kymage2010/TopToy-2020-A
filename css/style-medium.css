@@ -1,23 +1,78 @@
 header {
-	background: #C9C
+	/*! background: #C9C */
 }
+header .wrap .logo {
+	width: 35%;
+	
+}
+header .wrap .logo img {
+    max-width: auto;
+}
+header .wrap .search {
+	width: 65%;
+}
+header .wrap .icons {
 
+	width: 33.33333%;
+}
+header .wrap .phone {
+    width: 25%;
+}
 .content .wrap aside {
-	width: 25%;
+	width: 35%;
 }
 
 .content .wrap main {
-	width: 75%;
+	width: 65%;
 }
 
-.content main section .show .right {
-	/*! background: #9CF; */
-	/*! display: flex; */
-	/*! flex-flow: column nowrap; */
-	/*! width: calc(100%/9*4); */
-	/*! flex-flow: column nowrap; */
-}
 
 .content main section .box {
 	width: 50%;
+}
+.content main section .box.medium {
+    display: block;
+}
+.price {
+	width: auto
+}
+/*меню*/
+.content .wrap aside .box .item #catalog ul {
+}
+
+.content .wrap aside .box .item #catalog ul li {
+	margin-bottom: 1.5rem;
+}
+.content .wrap aside .box .item #catalog ul .active a {
+	color: #FF6E40;
+	text-decoration: none;
+}
+.content .wrap aside .box .item #catalog ul .active ul li a {
+	color: black;
+	text-decoration: underline;
+}
+
+
+
+.content .wrap aside .box .item #catalog ul li a {
+	text-decoration: underline;
+}
+.content .wrap aside .box .item #catalog ul li ul {
+	/*! margin-top: 0.75rem; */
+	/*! margin-left: 0.75rem; */
+	/*! margin-bottom: 1.5rem; */
+	/*! background: aliceblue; */
+	margin: 0.75rem 0 1.5rem 1.5rem;
+}
+.content .wrap aside .box .item #catalog ul li ul li {
+	margin-bottom: 0.75rem;
+}
+.content .wrap aside .box .item #catalog ul li ul li a {
+	font-size: 0.875rem;
+}
+.review{
+    display: block;
+}
+.menu_adaptive{
+    display: block;
 }

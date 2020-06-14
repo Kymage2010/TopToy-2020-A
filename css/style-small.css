@@ -1,0 +1,23 @@
+header {
+    
+}
+
+header .wrap .logo {
+    width: 41.6666%;
+}
+
+header .wrap .icons {
+    width: calc(58.3333% - 0.75rem);
+}
+
+header .wrap .search {
+    width: 58.3333%;
+}
+
+.content main section .box {
+    width: 50%;
+}
+
+.review{
+    display: none;
+}
