@@ -2,28 +2,28 @@ header {
 	/*! background: #C9C */
 }
 header .wrap .logo {
-	width: 35%;
+	width: 33.3333%;
 	
 }
 header .wrap .logo img {
     max-width: auto;
 }
 header .wrap .search {
-	width: 65%;
+	width: 66.6666%;
 }
 header .wrap .icons {
 
-	width: 33.33333%;
+	width: calc(66.6666% - 0.75rem);
 }
 header .wrap .phone {
-    width: 25%;
+    width: 33.333%;
 }
 .content .wrap aside {
-	width: 35%;
+	width: 33.3333%;
 }
 
 .content .wrap main {
-	width: 65%;
+	width: 66.6666%;
 }
 
 
@@ -37,42 +37,50 @@ header .wrap .phone {
 	width: auto
 }
 /*меню*/
-.content .wrap aside .box .item #catalog ul {
+.menu_adaptive {
+    display: block;
 }
+.content .wrap aside .title_nav .box .icon.burger {
+    display: none;
+}
+.content .wrap aside .box .item #catalog {
+    padding: 1.5rem;
+    font-size: 1rem;
+}
+
+.content .wrap aside .box .item #catalog ul {}
 
 .content .wrap aside .box .item #catalog ul li {
-	margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
 }
-.content .wrap aside .box .item #catalog ul .active a {
-	color: #FF6E40;
-	text-decoration: none;
-}
-.content .wrap aside .box .item #catalog ul .active ul li a {
-	color: black;
-	text-decoration: underline;
-}
-
-
 
 .content .wrap aside .box .item #catalog ul li a {
-	text-decoration: underline;
+    text-decoration: underline;
 }
+
 .content .wrap aside .box .item #catalog ul li ul {
-	/*! margin-top: 0.75rem; */
-	/*! margin-left: 0.75rem; */
-	/*! margin-bottom: 1.5rem; */
-	/*! background: aliceblue; */
-	margin: 0.75rem 0 1.5rem 1.5rem;
+    /*! margin-top: 0.75rem; */
+    /*! margin-left: 0.75rem; */
+    /*! margin-bottom: 1.5rem; */
+    /*! background: aliceblue; */
+    margin: 0.75rem 0 1.5rem 0;
+    border-left: solid 1px #FF6E40;
+    padding-left: 0.75rem;
 }
+
 .content .wrap aside .box .item #catalog ul li ul li {
-	margin-bottom: 0.75rem;
+    margin-bottom: 0.75rem;
 }
+
 .content .wrap aside .box .item #catalog ul li ul li a {
-	font-size: 0.875rem;
+    font-size: 0.875rem;
+    font-weight: 300;
 }
-.review{
-    display: block;
+
+.content .wrap aside .menu_adaptive .box .item #catalog .accord .parent .active {
+	color:#FF6E40;
+	text-decoration: none;
 }
-.menu_adaptive{
-    display: block;
+footer .wrap .box {
+    width: 33.3333%;
 }

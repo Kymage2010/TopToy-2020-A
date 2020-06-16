@@ -21,3 +21,9 @@ header .wrap .search {
 .review{
     display: none;
 }
+.content main section .box.medium {
+    display: block;
+}
+footer .wrap .box {
+    width: 50%;
+}

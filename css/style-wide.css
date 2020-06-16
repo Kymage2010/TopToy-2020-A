@@ -81,10 +81,18 @@ header .wrap .icons {
 .price {
     width: auto
 }
-
+.review {
+    display: block;
+}
 
 /*меню*/
 
+.menu_adaptive {
+    display: block;
+}
+.content .wrap aside .title_nav .box .icon.burger {
+    display: none;
+}
 .content .wrap aside .box .item #catalog {
     padding: 1.5rem;
     font-size: 1rem;
@@ -119,14 +127,10 @@ header .wrap .icons {
     font-weight: 300;
 }
 
-.review {
-    display: block;
-}
-
-.menu_adaptive {
-    display: block;
-}
 .content .wrap aside .menu_adaptive .box .item #catalog .accord .parent .active {
 	color:#FF6E40;
 	text-decoration: none;
+}
+footer .wrap .box {
+    width: 25%;
 }

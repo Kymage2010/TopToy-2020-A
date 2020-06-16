@@ -62,6 +62,7 @@
             <aside>
                 <div class="title_nav">
                     <div class="box">
+                        <div class="icon burger"></div>
                         <h2>Для детей и родителей</h2>
                     </div>
                 </div>
@@ -147,10 +148,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="filter-spec">
-                        <!-- показываем тольков разделах -->
-                        <div class="box">Content for class "filter-spec" Goes Here</div>
-                    </div>
+                    <!--<div class="filter-spec">
+                    <div class="box">Content for class "filter-spec" Goes Here</div>
+                    </div>-->
                 </div>
                 <section>
                     <div class="show">
@@ -454,23 +454,77 @@
     <footer>
         <div class="wrap">
             <div class="box">
-                <h4>инфо 1</h4>
+                <div class="title">
+                    <h4>Мы принимаем к оплате:</h4>
+                </div>
+                <ul>
+                    <li>
+                        <div class="icon visa"></div>
+                    </li>
+                    <li>
+                        <div class="icon master"></div>
+                    </li>
+                    <li>
+                        <div class="icon mir"></div>
+                    </li>
+                </ul>
             </div>
             <div class="box">
-                <h4>Заголовок h4</h4>
-                <div class="item">
-                    <h4>Заголовок h4</h4>
-                </div>
-                <div class="item">
-                    <h4>Заголовок h4</h4>
-                </div>
-                <div class="item">
-                    <h4>Заголовок h4</h4>
-                </div>
+                <div class="title">
+                    <h4>Социальные сети:</h4></div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="icon facebook"></div>Facebook
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon vk"></div>ВКонтакте
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon insta"></div>Instagram
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon tweet"></div>Twetter
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon telega"></div>Telegram
+                            </a>
+                        </li>
+                    </ul>
+                
             </div>
             <div class="box">
-                <h4>инфо 3</h4>
+                <div class="title">
+                    <h4>Покупателям:</h4>
+                </div>
+                <ul>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Оплата</a></li>
+                    <li><a href="#">Гарантия</a></li>
+                    <li><a href="#">Инструкции</a></li>
+                    
+                </ul>
             </div>
+            <div class="box">
+                <div class="title">
+                    <h4>Информация:</h4>
+                </div>
+                <ul>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Условия конфиденциальности</a></li>
+                    <li><a href="#">Пользовательское соглашение</a></li>
+                    <li><a href="#">Договор оферты</a></li>
+                </ul>
+            </div>
+            <div class="copyright">toptoy.ru &copy; 2020</div>
         </div>
     </footer>
     <script>
@@ -487,9 +541,10 @@
     <script>
         $(function() {
             $('ul.accord > li.parent > a').click(function() {
-                $(this).toggleClass('active');
                 $('.sub_parent').hide('slow');
+                $('ul.accord > li.parent > a').removeClass('active');
                 $(this).next('.sub_parent').show('slow');
+                $(this).addClass('active');
             });
         });
 
