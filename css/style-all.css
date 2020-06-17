@@ -13,7 +13,7 @@
     /* var(--back) */
     --icon: #757575;
     /*va icon) */
-    --font: #595959;
+    --font: #000;
 }
 
 body {
@@ -248,7 +248,21 @@ h4 {
 .icon.mir {
     background: url(../images/icon_mir.svg) var(--orange) no-repeat center center;
 }
-
+.icon.telegram {
+    background: url(../images/icon_telegram.svg) var(--orange) no-repeat center center;
+}
+.icon.vkontakte {
+    background: url(../images/icon_vkontakte.svg) var(--orange) no-repeat center center;
+}
+.icon.facebook {
+    background: url(../images/icon_facebook.svg) var(--orange) no-repeat center center;
+}
+.icon.twitter {
+    background: url(../images/icon_twitter.svg) var(--orange) no-repeat center center;
+}
+.icon.instagram {
+    background: url(../images/icon_instagram.svg) var(--orange) no-repeat center center;
+}
 .item {
     /*! padding:0.75rem; */
 }
@@ -664,7 +678,7 @@ footer {
 }
 
 .content .wrap aside .box .item #catalog {
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 0 1.5rem;
     font-size: 1rem;
 }
 
@@ -710,14 +724,16 @@ footer .box .title {
     margin-bottom: 1.5rem;
 }
 footer .box ul{
-/*! display: flex; */
-    /*! flex-flow: row wrap; */
+display: flex;
+    flex-flow: row wrap;
     
 }
 footer .box ul li {
     display: flex;
     align-items: center;
     margin-bottom: 0.75rem;
+    min-width: 50%;
+    font-size: 0.75rem;
 }
 
 footer .box ul li a {

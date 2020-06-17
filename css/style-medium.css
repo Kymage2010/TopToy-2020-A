@@ -81,6 +81,9 @@ header .wrap .phone {
 	color:#FF6E40;
 	text-decoration: none;
 }
+.review {
+    display: block;
+}
 footer .wrap .box {
     width: 33.3333%;
 }
