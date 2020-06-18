@@ -519,7 +519,7 @@ header .wrap .icons {
     font-size: 0.8125rem;
     line-height: 1.5rem;
     font-weight: 400;
-    box-shadow: 0px 0px 0px 2px var(--back);
+    box-shadow: 0 0 0 2px var(--back);
     background: var(--icon);
     left: 1.25rem;
     /*! border: 1px solid var(--back); */
@@ -727,8 +727,12 @@ footer {
     z-index: 9999;
     max-width: calc(100% - 1.5rem);
     /*! margin-right: 0.75rem; */
-    box-shadow: 0px 0px 10px 0px var(--icon);
+    box-shadow: 0 0 10px 0 var(--icon);
     background: var(--back);
+    transition: all .2s;
+}
+.menu_adaptive.show{
+    left: 0;
 }
 
 .content .wrap aside .box .item #catalog {

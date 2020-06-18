@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="ru">
 
 <head>
     <meta charset="utf-8">
@@ -13,6 +13,7 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/jquery.slimmenu.min.js"></script>
+    <script src="js/tools.js"></script>
 </head>
 
 <body>
@@ -32,7 +33,7 @@
                 </div>
             </div>
             <div class="phone">
-                <div class="box"><a href="tel:84994040615">499 404-06-15</a></div>
+                <div class="box"><a href="tel:84994040615">499 40-40-615</a></div>
             </div>
             <div class="icons">
                 <a href="#">
@@ -549,15 +550,39 @@
             loop: true,
         });
 
-    </script>
-    <!-- моя попытка но активный класс не меняется(((-->
-    <script>
         $(function() {
-            $('ul.accord > li.parent > a').click(function() {
-                $('.sub_parent').hide('slow');
-                $('ul.accord > li.parent > a').removeClass('active');
-                $(this).next('.sub_parent').show('slow');
-                $(this).addClass('active');
+            $('ul.accord > li.parent > a').click(function(e) {
+                e.preventDefault();
+                var state = $(this).next('.sub_parent').css("display");
+                if(state === "none") {
+                    $('.sub_parent').slideUp('normal');
+                    $('ul.accord > li.parent > a').removeClass('active');
+                    $(this).addClass('active').next('.sub_parent').slideDown('normal');
+                    setcookie("openMainMenu", $(this).parent("li").index(),
+                        (new Date).getTime() + (20 * 365 * 24 * 60 * 60 * 1000));
+                }else{
+                    $(this).addClass('active').next('.sub_parent').slideUp('normal');
+                }
+                return false;
+            });
+            var li = $('ul.accord > li.parent'),
+                open = parseInt(getcookie("openMainMenu"));
+            $(li[open]).find("a").click();
+
+            $(".sub_parent li a").on("click", function(){
+                $(".sub_parent li a").removeClass("active");
+                $(this).addClass("active");
+                $(".menu_adaptive").removeClass("show");
+            });
+
+            $(".icon.burger").on("click", function(){
+                var $md = $(".menu_adaptive");
+                if($md.hasClass("show")){
+                    $md.removeClass("show");
+                }else{
+                    $md.addClass("show");
+                }
+
             });
         });
 
