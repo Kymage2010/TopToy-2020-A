@@ -39,6 +39,10 @@ header .wrap .phone {
 /*меню*/
 .menu_adaptive {
     display: block;
+    position: initial;
+    box-shadow: none;
+    width: 100%;
+    max-width: 100%;
 }
 .content .wrap aside .title_nav .box .icon.burger {
     display: none;

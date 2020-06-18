@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="96px" height="96px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 145.38 145.38"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#FF6E40;stroke-width:14.27;stroke-miterlimit:22.9256}
+    .fil1 {fill:none}
+    .fil0 {fill:#FF6E40}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_1613575318656">
+   <polygon class="fil0" points="58.37,93.87 44.07,93.87 44.07,65.63 29.77,65.63 29.77,51.51 72.68,51.51 72.68,65.63 58.37,65.63 "/>
+   <polygon class="fil0" points="115.61,93.87 72.7,93.87 72.7,79.75 87,79.75 87,51.51 101.31,51.51 101.31,79.75 115.61,79.75 "/>
+   <animateTransform attributeType="xml"
+      attributeName="transform"
+      type="rotate"
+      from="0 73 73"
+      to="360 73 73"
+      dur="1s"
+      repeatCount="indefinite"/>
+  </g>
+  <circle class="fil1 str0" cx="72.69" cy="72.69" r="65.56"/>
+ </g>
+</svg>

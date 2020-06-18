@@ -28,20 +28,22 @@ header .wrap .icons {
 }
 
 .content main section .box {
-    width: 33%
+    width: 33.3333%;
 }
 
 .content main section .show .slider {
     width: calc(100%/9*5);
+    width: 58.3333%;
 }
 
 .content main section .show .right {
     /*! background: #9CF; */
     display: flex;
     flex-flow: column nowrap;
-    width: calc(100%/9*4);
+    /*! width: calc(100%/9*4); */
     /*! flex-flow: column nowrap; */
     /*! flex-direction: column; */
+    width: 41.6666%;
 }
 
 .content main section .show .right .show_item {
@@ -89,6 +91,10 @@ header .wrap .icons {
 
 .menu_adaptive {
     display: block;
+    position: initial;
+    box-shadow: none;
+    /*! width: 100%; */
+    max-width: 100%;
 }
 .content .wrap aside .title_nav .box .icon.burger {
     display: none;
