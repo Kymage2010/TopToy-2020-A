@@ -87,9 +87,9 @@ a:focus {
     transition: ease-in-out 0.3s;
 }
 
-p a{
-border-bottom: dotted 1px var(--border);}
-
+p a {
+    border-bottom: dotted 1px var(--border);
+}
 
 img {
     max-width: 100%;
@@ -246,24 +246,31 @@ h4 {
 .icon.master {
     background: url(../images/icon_master.svg) var(--orange) no-repeat center center;
 }
+
 .icon.mir {
     background: url(../images/icon_mir.svg) var(--orange) no-repeat center center;
 }
+
 .icon.telegram {
     background: url(../images/icon_telegram.svg) var(--orange) no-repeat center center;
 }
+
 .icon.vkontakte {
     background: url(../images/icon_vkontakte.svg) var(--orange) no-repeat center center;
 }
+
 .icon.facebook {
     background: url(../images/icon_facebook.svg) var(--orange) no-repeat center center;
 }
+
 .icon.twitter {
     background: url(../images/icon_twitter.svg) var(--orange) no-repeat center center;
 }
+
 .icon.instagram {
     background: url(../images/icon_instagram.svg) var(--orange) no-repeat center center;
 }
+
 .item {
     /*! padding:0.75rem; */
 }
@@ -495,8 +502,9 @@ header .wrap .icons {
     width: 2rem;
     background: var(--icon);
     position: relative;
-    /*! color: white; */
+    color: white;
     /*! margin: 0.75rem; */
+    display: inline-block;
 }
 
 .icon .count {
@@ -514,7 +522,7 @@ header .wrap .icons {
     box-shadow: 0px 0px 0px 2px var(--back);
     background: var(--icon);
     left: 1.25rem;
-    /*! border: 1px solid var(--border); */
+    /*! border: 1px solid var(--back); */
 }
 
 .bracket {
@@ -667,6 +675,44 @@ header .wrap .icons {
 
 .content main .filters .filter-spec {}
 
+.content main .filters .filter-spec .bread {
+    margin-bottom: 0.75rem;
+}
+
+.content main .filters .filter-spec .bread ul {
+    display: flex;
+}
+
+.content main .filters .filter-spec .bread ul li {
+    display: flex;
+    margin-right: 0.75rem;
+}
+
+.content main .filters .filter-spec .bread ul li:after {
+    content: '/';
+    padding-left: 0.75rem;
+    color: var(--orange);
+}
+
+.content main .filters .filter-spec .bread ul .last:after {
+    content: ''
+}
+
+.content main .filters .filter-spec .bread ul li a {
+    color: var(--icon);
+}
+
+.content main .filters .filter-spec .item {display: flex;}
+
+.content main .filters .filter-spec .item .group {
+    margin: 0.75rem;
+}
+
+.content main .filters .filter-spec .item .group .title {
+    margin-bottom: 0.75rem;
+    color: var(--orange);
+}
+
 footer {
     background: var(--orange);
     margin-top: 0.75rem;
@@ -731,11 +777,12 @@ footer .wrap .box {
 footer .box .title {
     margin-bottom: 1.5rem;
 }
-footer .box ul{
-display: flex;
+
+footer .box ul {
+    display: flex;
     flex-flow: row wrap;
-    
 }
+
 footer .box ul li {
     display: flex;
     align-items: center;
@@ -754,32 +801,172 @@ footer .box ul li a {
 footer .box ul li .icon {
     margin-right: 0.75rem;
 }
-.copyright{
-font-weight:300; 
-text-align: center;
-width: 100%;
-margin: 0.75rem;
-font-size: 0.75rem;
+
+.copyright {
+    font-weight: 300;
+    text-align: center;
+    width: 100%;
+    margin: 0.75rem;
+    font-size: 0.75rem;
 }
 
 .review .box .item .rev {
-margin: 1.5rem;
+    margin: 1.5rem;
     display: flex;
-flex-flow: row wrap;
-align-items: flex-start;
+    flex-flow: row wrap;
+    align-items: flex-start;
 }
 
-.review .box .item .rev .title{
-margin: 0;
-width: 100%;
-color: var(--orange);
-/*! font-weight: 700; */
-border-left: solid 1px var(--orange);
-padding-left: 0.75rem;
+.review .box .item .rev .title {
+    margin: 0;
+    width: 100%;
+    color: var(--orange);
+    /*! font-weight: 700; */
+    /*! border-left: solid 1px var(--orange); */
+    /*! padding-left: 0.75rem; */
 }
-.review .box .item .rev .pic{width: 33.3333%;}
 
-.review .box .item .rev .anons{width: 66.66666%;/*! font-size: 0.75rem; */padding-left: 0.75rem;margin-top: 0.75rem;}
+.review .box .item .rev .pic {
+    width: 33.3333%;
+}
+
+.review .box .item .rev .anons {
+    width: 66.66666%;
+    font-size: 0.75rem;
+    padding-left: 0.75rem;
+    margin-top: 0.75rem;
+    font-weight: 300;
+    line-height: 1rem;
+}
+
 .anons p a {
     text-decoration: underline dotted 1px var(--icon);
+    color: var(--icon);
+}
+
+.pagination {
+    display: flex;
+    margin: 0.75rem;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagination .page {
+    width: 2rem;
+    height: 2rem;
+    border: solid 1px var(--icon);
+    line-height: 2rem;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 300;
+    background: white;
+}
+
+.pagination .page.current {
+    border: solid 1px var(--orange);
+}
+
+.pagination .paginate {
+    height: 2rem;
+}
+
+.pagination .paginate .icon.prev {
+    background: url(../images/icon_page_left.svg) var(--icon) no-repeat center center;
+}
+
+.pagination .paginate .icon.next {
+    background: url(../images/icon_page_right.svg) var(--icon) no-repeat center center;
+}
+
+
+/* The container */
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
+    cursor: pointer;
+    /*! font-size: 22px; */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /*! transition: ease-in-out 0.3s; */
+}
+
+
+/* Hide the browser's default checkbox */
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+
+/* Create a custom checkbox */
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1rem;
+    width: 1rem;
+    /*! background-color: #eee; */
+    border: solid 1px var(--icon);
+    transition: ease-in-out 0.3s;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.container:hover input ~ .checkmark {
+    /*! background-color: #ccc; */
+    /*! transition: ease-in-out 0.3s; */
+}
+
+
+/* When the checkbox is checked, add a blue background */
+
+.container input:checked ~ .checkmark {
+    /*! background-color: #2196F3; */
+    border: solid 1px var(--orange);
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    /*! transition: ease-in-out 0.3s; */
+}
+
+
+/* Show the checkmark when checked */
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+    /*! transition: ease-in-out 0.3s; */
+}
+
+
+/* Style the checkmark/indicator */
+
+.container .checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 3px;
+    height: 8px;
+    border: solid var(--orange);
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    /*! transition: ease-in-out 0.3s; */
 }
