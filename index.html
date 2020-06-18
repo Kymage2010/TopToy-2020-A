@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="ru">
 
 <head>
     <meta charset="utf-8">
@@ -13,6 +13,7 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/jquery.slimmenu.min.js"></script>
+    <script src="js/tools.js"></script>
 </head>
 
 <body>
@@ -567,6 +568,22 @@
             var li = $('ul.accord > li.parent'),
                 open = parseInt(getcookie("openMainMenu"));
             $(li[open]).find("a").click();
+
+            $(".sub_parent li a").on("click", function(){
+                $(".sub_parent li a").removeClass("active");
+                $(this).addClass("active");
+                $(".menu_adaptive").removeClass("show");
+            });
+
+            $(".icon.burger").on("click", function(){
+                var $md = $(".menu_adaptive");
+                if($md.hasClass("show")){
+                    $md.removeClass("show");
+                }else{
+                    $md.addClass("show");
+                }
+
+            });
         });
 
     </script>
