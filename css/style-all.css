@@ -87,8 +87,9 @@ a:focus {
     transition: ease-in-out 0.3s;
 }
 
+p a{
+border-bottom: dotted 1px var(--border);}
 
-/*для адаптивности изображений*/
 
 img {
     max-width: 100%;
@@ -122,7 +123,7 @@ h3 {
     /*! background: antiquewhite; */
     /*! overflow: hidden; */
     font-weight: 400;
-    font-size: 0.75rem;
+    font-size: 0.875rem;
 }
 
 h3 a,
@@ -419,7 +420,7 @@ header .wrap .icons {
 .content main section .title {
     width: 100%;
     padding-left: 0.75rem;
-    color: var(--orange);
+    /*! color: var(--orange); */
     text-decoration: underline;
 }
 
@@ -675,6 +676,13 @@ footer {
 
 .menu_adaptive {
     display: block;
+    position: absolute;
+    left: -100%;
+    z-index: 9999;
+    max-width: calc(100% - 1.5rem);
+    /*! margin-right: 0.75rem; */
+    box-shadow: 0px 0px 10px 0px var(--icon);
+    background: var(--back);
 }
 
 .content .wrap aside .box .item #catalog {
@@ -734,6 +742,7 @@ footer .box ul li {
     margin-bottom: 0.75rem;
     min-width: 50%;
     font-size: 0.75rem;
+    padding-right: 0.75rem;
 }
 
 footer .box ul li a {
@@ -751,4 +760,26 @@ text-align: center;
 width: 100%;
 margin: 0.75rem;
 font-size: 0.75rem;
+}
+
+.review .box .item .rev {
+margin: 1.5rem;
+    display: flex;
+flex-flow: row wrap;
+align-items: flex-start;
+}
+
+.review .box .item .rev .title{
+margin: 0;
+width: 100%;
+color: var(--orange);
+/*! font-weight: 700; */
+border-left: solid 1px var(--orange);
+padding-left: 0.75rem;
+}
+.review .box .item .rev .pic{width: 33.3333%;}
+
+.review .box .item .rev .anons{width: 66.66666%;/*! font-size: 0.75rem; */padding-left: 0.75rem;margin-top: 0.75rem;}
+.anons p a {
+    text-decoration: underline dotted 1px var(--icon);
 }
