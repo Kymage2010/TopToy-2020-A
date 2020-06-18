@@ -163,6 +163,23 @@ h4 {
     /*! align-items: center; */
 }
 
+.button {
+    height: 2rem;
+    /*! border: solid 1px; */
+    /*! padding: 0.75rem; */
+    cursor: pointer;
+    background: var(--icon);
+    color: white;
+    /*! margin: 0.75rem; */
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 0 0.75rem;
+    margin: 0 0.75rem 0 0.75rem;
+}
+
+#submit {
+    background: var(--orange);
+}
+
 
 /* ПОИСК */
 
@@ -702,20 +719,29 @@ header .wrap .icons {
     color: var(--icon);
 }
 
-.content main .filters .filter-spec .item {display: flex;flex-flow: row wrap;}
+.content main .filters .filter-spec .item {
+    display: flex;
+    flex-flow: row wrap;
+}
 
 .content main .filters .filter-spec .item .group {
-    margin: 0.75rem 0.75rem 0 0.75rem;
+    margin: 1.5rem;
 }
 
 .content main .filters .filter-spec .item .group .title {
     margin-bottom: 0.75rem;
     color: var(--orange);
 }
-.content main .filters .filter-spec .item .accept{
+
+.content main .filters .filter-spec .item .accept {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-bottom: 1.5rem;
 }
-.button {}
+
 footer {
     background: var(--orange);
     margin-top: 0.75rem;
@@ -734,7 +760,8 @@ footer {
     background: var(--back);
     transition: all .6s;
 }
-.menu_adaptive.show{
+
+.menu_adaptive.show {
     left: 0;
 }
 
@@ -855,8 +882,9 @@ footer .box ul li .icon {
     display: flex;
     margin: 0.75rem;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    /*! margin: 0.75rem 2.5rem; */
 }
 
 .pagination .page {
@@ -868,6 +896,7 @@ footer .box ul li .icon {
     font-size: 0.75rem;
     font-weight: 300;
     background: white;
+    margin: 0 0.75rem;
 }
 
 .pagination .page.current {
@@ -895,7 +924,7 @@ footer .box ul li .icon {
     padding-left: 1.5rem;
     margin-bottom: 0.75rem;
     cursor: pointer;
-    /*! font-size: 22px; */
+    font-size: 0.75rem;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -977,4 +1006,32 @@ footer .box ul li .icon {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     /*! transition: ease-in-out 0.3s; */
+}
+
+.close_box {
+    text-align: center;
+    background: white;
+    padding: 0 0.75rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 11rem;
+    line-height: 2rem;
+    /*! border: solid 1px var(--border); */
+    border-top: solid 1px var(--border);
+    border-left: solid 1px var(--border);
+    border-right: solid 1px var(--border);
+    bottom: -1px;
+    position: relative;
+    cursor: pointer;
+}
+.close_box:before, .close_box:after{
+    content: '>';
+  /*! background: url(../images/icon_page_right.svg) var(--icon) no-repeat center center; */
+    width: 0.75rem;
+    display: inline-block;
+    height: 0.75rem;
+    transform: rotate(90deg);
+    line-height: 0.875rem;
+    padding: 0 0.75rem;
+    color: var(--orange);
 }
