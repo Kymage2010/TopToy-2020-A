@@ -758,7 +758,7 @@ footer {
     /*! margin-right: 0.75rem; */
     box-shadow: 0 0 10px 0 var(--icon);
     background: var(--back);
-    transition: all .6s;
+    transition: all .4s;
 }
 
 .menu_adaptive.show {
