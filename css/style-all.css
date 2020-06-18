@@ -174,6 +174,7 @@ h4 {
     font-family: 'Roboto Condensed', sans-serif;
     padding: 0 0.75rem;
     margin: 0 0.75rem 0 0.75rem;
+    border-radius: 1rem;
 }
 
 #submit {
@@ -690,10 +691,15 @@ header .wrap .icons {
     cursor: pointer;
 }
 
-.content main .filters .filter-spec {}
+.content main .filters .filter-spec .box{
+    display: flex;
+flex-flow: row wrap;
+
+align-items: center;
+}
 
 .content main .filters .filter-spec .bread {
-    margin-bottom: 0.75rem;
+    /*! margin-bottom: 0.75rem; */
 }
 
 .content main .filters .filter-spec .bread ul {
@@ -722,6 +728,7 @@ header .wrap .icons {
 .content main .filters .filter-spec .item {
     display: flex;
     flex-flow: row wrap;
+    width: 100%;
 }
 
 .content main .filters .filter-spec .item .group {
@@ -1010,28 +1017,32 @@ footer .box ul li .icon {
 
 .close_box {
     text-align: center;
-    background: white;
+    background: var(--icon);
     padding: 0 0.75rem;
     margin-left: auto;
-    margin-right: auto;
-    width: 11rem;
+    /*! margin-right: auto; */
+    /*! width: 11rem; */
     line-height: 2rem;
     /*! border: solid 1px var(--border); */
-    border-top: solid 1px var(--border);
-    border-left: solid 1px var(--border);
-    border-right: solid 1px var(--border);
-    bottom: -1px;
-    position: relative;
+    /*! border-top: solid 1px var(--border); */
+    /*! border-left: solid 1px var(--border); */
+    /*! border-right: solid 1px var(--border); */
+    /*! bottom: -1px; */
+    /*! position: relative; */
     cursor: pointer;
+    color: white;
 }
-.close_box:before, .close_box:after{
+.close_box:after{
     content: '>';
   /*! background: url(../images/icon_page_right.svg) var(--icon) no-repeat center center; */
-    width: 0.75rem;
+    /*! width: 0.75rem; */
     display: inline-block;
-    height: 0.75rem;
+    /*! height: 0.75rem; */
     transform: rotate(90deg);
-    line-height: 0.875rem;
-    padding: 0 0.75rem;
-    color: var(--orange);
+    /*! line-height: 3rem; */
+    /*! padding: 0 0.75rem 0 0; */
+    /*! color: var(--orange); */
+    /*! transform-origin: center; */
+    /*! padding-left: 0.75rem; */
+    margin-left: 0.75rem;
 }

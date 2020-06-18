@@ -1,4 +1,3 @@
-<script>
         var swiper = new Swiper('.swiper-container', {
             navigation: {
                 nextEl: '.next',
@@ -7,8 +6,8 @@
             loop: true,
         });
 
-        $(function() {
-            $('ul.accord > li.parent > a').click(function(e) {
+        $(document).ready(function() {
+    $('ul.accord > li.parent > a').click(function(e) {
                 e.preventDefault();
                 var state = $(this).next('.sub_parent').css("display");
                 if(state === "none") {
@@ -43,4 +42,3 @@
             });
         });
 
-    </script>
