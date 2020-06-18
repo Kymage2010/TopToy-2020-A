@@ -521,28 +521,7 @@
             <div class="copyright">toptoy.ru &copy; 2020</div>
         </div>
     </footer>
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            navigation: {
-                nextEl: '.next',
-                prevEl: '.prev',
-            },
-            loop: true,
-        });
-
-    </script>
-    <!-- моя попытка но активный класс не меняется(((-->
-    <script>
-        $(function() {
-            $('ul.accord > li.parent > a').click(function() {
-                $('.sub_parent').hide('slow');
-                $('ul.accord > li.parent > a').removeClass('active');
-                $(this).next('.sub_parent').show('slow');
-                $(this).addClass('active');
-            });
-        });
-
-    </script>
+<script src="js/es.js"></script>
     <!-- конец -->
 </body>
 
