@@ -95,6 +95,7 @@ header .wrap .icons {
     box-shadow: none;
     /*! width: 100%; */
     max-width: 100%;
+    margin: 0;
 }
 .content .wrap aside .title_nav .box .icon.burger {
     display: none;
