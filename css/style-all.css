@@ -768,6 +768,8 @@ footer {
     box-shadow: 0 0 10px 0 var(--icon);
     background: var(--back);
     transition: all .4s;
+    border-radius: 0 1rem 1rem 0;
+    margin-left: -0.75rem;
 }
 
 .menu_adaptive.show {
