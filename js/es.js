@@ -38,9 +38,11 @@ $(document).ready(function () {
         let $filter = $("#filter_show");
         if($filter.css("display") === "none"){
             $filter.slideDown("fast");
+            $(this).addClass("open");
             setcookie("openTopFilter", "1", (new Date).getTime() + (20 * 365 * 24 * 60 * 60 * 1000));
         }else{
             $filter.slideUp("fast");
+            $(this).removeClass("open");
             setcookie("openTopFilter", "0", (new Date).getTime() + (20 * 365 * 24 * 60 * 60 * 1000));
         }
     });
