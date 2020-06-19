@@ -6,6 +6,12 @@ var swiper = new Swiper('.swiper-container', {
     loop: true,
 });
 $(document).ready(function () {
+    var li = $('ul.accord > li.parent'),
+        menuOpenItem = parseInt(getcookie("openMainMenu")),
+        filterShow = parseInt(getcookie("openTopFilter")),
+        $close_box = $(".close_box"),
+        $filter_show = $("#filter_show");
+
     $('ul.accord > li.parent > a').click(function (e) {
         e.preventDefault();
         var state = $(this).next('.sub_parent').css("display");
@@ -34,7 +40,7 @@ $(document).ready(function () {
         }
     });
 
-    $(".close_box").on("click", function(){
+    $close_box.on("click", function(){
         let $filter = $("#filter_show");
         if($filter.css("display") === "none"){
             $filter.slideDown("fast");
@@ -47,10 +53,14 @@ $(document).ready(function () {
         }
     });
 
-    var li = $('ul.accord > li.parent'),
-        menuOpenItem = parseInt(getcookie("openMainMenu")),
-        filterShow = parseInt(getcookie("openTopFilter"));
+
     $(li[menuOpenItem]).find("a").click();
-    $("#filter_show").css("display", (filterShow === 1) ? "flex" : "none");
+    if(filterShow === 1){
+        $filter_show.css("display", "flex");
+        $close_box.addClass("open");
+    }else{
+        $filter_show.css("display", "none");
+        $close_box.removeClass("open");
+    }
 
 });
