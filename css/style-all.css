@@ -901,7 +901,7 @@ footer .box ul li .icon {
 .pagination .page {
     width: 2rem;
     height: 2rem;
-    border: solid 1px var(--icon);
+    border: solid 1px var(--border);
     line-height: 2rem;
     text-align: center;
     font-size: 0.75rem;
