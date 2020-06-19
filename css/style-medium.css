@@ -82,7 +82,7 @@ header .wrap .phone {
 }
 
 .content .wrap aside .menu_adaptive .box .item #catalog .accord .parent .active {
-	color:#FF6E40;
+	color:var(--orange);
 	text-decoration: none;
 }
 .review {

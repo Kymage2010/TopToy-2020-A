@@ -134,7 +134,7 @@ header .wrap .icons {
 }
 
 .content .wrap aside .menu_adaptive .box .item #catalog .accord .parent .active {
-	color:#FF6E40;
+	color:var(--orange);
 	text-decoration: none;
 }
 footer .wrap .box {
