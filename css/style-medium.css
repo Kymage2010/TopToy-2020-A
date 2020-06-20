@@ -89,6 +89,18 @@ header .wrap .phone {
 .review {
     display: block;
 }
+.content main section .card .photo {
+   /*! width: 41.6666%; */ 
+   
+   
+}
+
+.content main section .card .desc {
+    /*! width: 58.3333%; */
+    
+}
+.content main section .card .info_tab nav{
+display: flex;}
 footer .wrap .box {
     width: 33.3333%;
 }

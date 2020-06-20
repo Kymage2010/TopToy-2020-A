@@ -24,6 +24,16 @@ header .wrap .search {
 .content main section .box.medium {
     display: block;
 }
+.content main section .card .photo {
+   /*! width: 41.6666%; */ 
+   
+   
+}
+
+.content main section .card .desc {
+    /*! width: 58.3333%; */
+    
+}
 footer .wrap .box {
     width: 50%;
 }
