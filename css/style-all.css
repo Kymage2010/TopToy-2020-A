@@ -122,7 +122,7 @@ h3 {
     display: inline-block;
     /*! background: antiquewhite; */
     /*! overflow: hidden; */
-    font-weight: 400;
+    font-weight: 600;
     font-size: 0.875rem;
 }
 
@@ -290,7 +290,26 @@ h4 {
 .icon.instagram {
     background: url(../images/icon_instagram.svg) var(--orange) no-repeat center center;
 }
-
+.icon.warranty{
+background: url(../images/icon_warranty.svg) var(--icon) no-repeat center center;
+margin-right: 0.75rem;
+background-size: 75%;
+}
+.icon.logist{
+background: url(../images/icon_logist.svg) var(--icon) no-repeat center center;
+margin-right: 0.75rem;
+background-size: 75%;
+}
+.icon.sertif{
+background: url(../images/icon_sertif.svg) var(--icon) no-repeat center center;
+margin-right: 0.75rem;
+background-size: 75%;
+}
+.icon.return{
+background: url(../images/icon_return.svg) var(--icon) no-repeat center center;
+margin-right: 0.75rem;
+background-size: 75%;
+}
 .item {
     /*! padding:0.75rem; */
 }
@@ -305,7 +324,7 @@ h4 {
 }
 
 .box .item .pic a img {
-    /*! height: 8.5rem; */
+    height: 8.5rem;
 }
 
 .box .item .info {
@@ -861,7 +880,7 @@ footer .box ul li .icon {
     margin: 1.5rem;
     display: flex;
     flex-flow: row wrap;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .review .box .item .rev .title {
@@ -874,21 +893,22 @@ footer .box ul li .icon {
 }
 
 .review .box .item .rev .pic {
-    width: 33.3333%;
+    /*! width: 33.3333%; */
+    margin-top: 0.75rem;
 }
 
 .review .box .item .rev .anons {
-    width: 66.66666%;
-    font-size: 0.75rem;
-    padding-left: 0.75rem;
+    /*! width: 66.66666%; */
+    /*! font-size: 0.75rem; */
+    /*! padding-left: 0.75rem; */
     margin-top: 0.75rem;
     font-weight: 300;
-    line-height: 1rem;
+    line-height: 1.2rem;
 }
 
 .anons p a {
     text-decoration: underline dotted 1px var(--icon);
-    color: var(--icon);
+    /*! color: var(--icon); */
 }
 
 .pagination {
@@ -1049,10 +1069,15 @@ footer .box ul li .icon {
     /*! margin: 0.75rem 0; */
     /*! padding-bottom: calc(0.75rem/2); */
     border-left: none;
-    padding: 0;
-    margin: -0.75rem 0;
-    /*! margin-top: -0.75rem; */
+    /*! padding: 0; */
+    /*! margin: -0.75rem 0; */
+    /*! margin-top: 1.5rem; */
     /*! margin-bottom: -0.75rem; */
+    color: var(--orange);
+    width: auto;
+    /*! background: antiquewhite; */
+    margin: 0 0 0.75rem 0;
+    padding: 0;
 }
 
 .content main section .card .box .item {
@@ -1069,16 +1094,17 @@ footer .box ul li .icon {
 }
 
 .content main section .card .desc .item .text {
-    padding: 0.75rem;
+    padding: 1.5rem;
 }
 
 .content main section .card .desc .item .text p {
     padding: 0 0.75rem 0.75rem 0;
     line-height: 1.2rem;
+    /*! font-weight: 300; */
 }
 
 .content main section .card .desc .item .buy {
-    padding: 0.75rem;
+    padding: 1.5rem;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -1093,11 +1119,42 @@ footer .box ul li .icon {
 }
 
 .content main section .card .desc .item .addon {
-    padding: 0.75rem;
+    padding: 1.5rem;
+}
+
+.content main section .card .desc .item .addon .param {
+    position: relative;
+    /*! width: 50%; */
+    margin-bottom: 0.75rem;
+    max-width: 9rem;
+    font-weight: 300;
+}
+
+.content main section .card .desc .item .addon .param span {
+    font-weight: 400;
+    margin-left: 9rem;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+.content main section .card .desc .item .addon .param span:after {
+    border-bottom: 1px dashed var(--icon);
+    bottom: 0;
+    content: '';
+    display: block;
+    /*! height: 20px; */
+    left: -9rem;
+    position: absolute;
+    width: 100%;
 }
 
 .content main section .card .info_tab {
     width: 100%
+}
+
+.content main section .card .info_text {
+    margin: 1.5rem;
 }
 
 .content main section .card .info_tab nav {
@@ -1130,7 +1187,7 @@ footer .box ul li .icon {
     position: relative;
     width: 50%;
     margin-bottom: 0.75rem;
-    max-width: 18rem;
+    max-width: 13rem;
 }
 
 .ft-contents .param span {
@@ -1157,7 +1214,7 @@ footer .box ul li .icon {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    border-bottom: dashed 1px var(--icon);
+    border-bottom: solid 1px var(--border);
     margin-bottom: 1.5rem;
     align-items: center;
 }
@@ -1167,10 +1224,12 @@ footer .box ul li .icon {
     display: flex;
     align-items: center;
 }
-.ft-contents .feedback .name .icon.log_in{
+
+.ft-contents .feedback .name .icon.log_in {
     margin-right: 0.75rem;
     background: url(../images/icon_account_white.svg) var(--border) no-repeat center center;
 }
+
 .ft-contents .feedback .date {
     font-size: 0.75rem;
     color: var(--icon);
@@ -1181,12 +1240,24 @@ footer .box ul li .icon {
     margin: 0.75rem 0;
     padding-left: 2.75rem;
 }
-.ft-contents .feedback .text p{
-padding: 0.1875rem 0;
-line-height: 1rem;
-font-size: 0.75rem;
+
+.ft-contents .feedback .text p {
+    padding: 0.1875rem 0;
+    line-height: 1rem;
+    font-size: 0.75rem;
 }
-.ft-contents .feedback .name .rate {margin-left: 0.75rem;}
+
+.ft-contents .feedback .name .rate {
+    margin-left: 0.75rem;
+}
+
+.ft-contents .feedback .name .rate span {
+    color: var(--border);
+}
+
+.ft-contents .feedback .name .rate .active {
+    color: var(--orange);
+}
 
 .ft-contents .feedback .answer {
     /*! border-left: solid 1px var(--orange); */
@@ -1194,6 +1265,54 @@ font-size: 0.75rem;
     margin: 0.75rem 0 0.75rem 2.75rem;
 }
 
+.ft-contents .addon {}
+
+.ft-contents .addon .add {margin-bottom: 0.75rem;}
+
+.ft-contents .addon .add a {
+    display: inline;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.ft-contents .addon .add span {
+    text-transform: uppercase;
+}
+.ft-contents .addon .add span:before{
+content: '(';
+text-transform: lowercase;
+/
+}
+.ft-contents .addon .add span:after{
+content: ')';
+text-transform: lowercase;
+
+}
+
+.content main section .card .box .item .info_text .param {
+    position: relative;
+    width: 50%;
+    margin-bottom: 0.75rem;
+    max-width: 13rem;
+    display: flex;
+    align-items: center;
+}
+.content main section .card .box .item .info_text .param:after{
+/*! border-bottom: 1px dashed var(--icon); */
+    /*! bottom: 0; */
+    /*! content: ''; */
+    /*! display: block; */
+    /*! height: 20px; */
+    /*! left: 0; */
+    /*! position: absolute; */
+    /*! width: 100%; */}
+.content main section .card .box .item .info_text .param a{display: inline;text-decoration: underline;font-weight: 300;}
+.content main section .card .box .item .info_text .param span{
+    font-weight: 400;
+    /*! margin-left: 1.5rem; */
+    position: absolute;
+    left: 100%;
+    width: 58.3333%;}
 .fotorama .pic {
     height: 100%;
 }

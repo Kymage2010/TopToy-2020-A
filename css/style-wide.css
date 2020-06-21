@@ -141,17 +141,19 @@ header .wrap .icons {
     color: var(--orange);
     text-decoration: none;
 }
-
+.content main section .card .bread {
+    margin: 0.75rem 0;}
 .content main section .card .photo {
-    width: 41.6666%;
+    width: calc(100/9*5%);
 
 
 }
 
 .content main section .card .desc {
-    width: 58.3333%;
+    width: calc(100/9*4%);
 
 }
+
 .content main section .card .info_tab nav{
 display: flex;}
 footer .wrap .box {
