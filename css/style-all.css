@@ -452,6 +452,10 @@ header .wrap .icons {
     border-left: solid 4px var(--orange);
     padding-left: 0.75rem;
     margin-left: 0.75rem;
+    transition: all .3s;
+}
+.close_box.open:after{
+    transform: rotate(270deg);
 }
 
 .content main section .box.medium {
@@ -1030,6 +1034,127 @@ footer .box ul li .icon {
 
 .close_box.open:after {
     transform: rotate(270deg);
+}
+
+.content main section .card .box {
+    width: 100%;
+}
+
+.content main section .card {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.content main section .card .box .title {
+    /*! height: calc(3.875rem + 2px); */
+    /*! padding: 0 0 calc(0.75rem/2 - 2px) 0; */
+    text-decoration: none;
+    /*! margin: 0.75rem 0; */
+    /*! padding-bottom: calc(0.75rem/2); */
+    border-left: none;
+    padding: 0;
+    margin: -0.75rem 0;
+    /*! margin-top: -0.75rem; */
+    /*! margin-bottom: -0.75rem; */
+}
+
+.content main section .card .box .item {
+    /*! display: flex; */
+    /*! flex-flow: row wrap; */
+}
+
+.content main section .card .photo {
+    width: 100%;
+}
+
+.content main section .card .desc {
+    width: 100%;
+}
+
+.content main section .card .desc .item .text {
+    padding: 0.75rem;
+}
+
+.content main section .card .desc .item .text p {
+    padding: 0 0.75rem 0.75rem 0;
+    line-height: 1.2rem;
+}
+
+.content main section .card .desc .item .buy {
+    padding: 0.75rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.content main section .card .desc .item .buy .icon {
+    margin: 0.375rem;
+}
+
+.content main section .card .desc .item .buy .price {
+    width: auto;
+}
+
+.content main section .card .desc .item .addon {
+    padding: 0.75rem;
+}
+
+.content main section .card .info_tab {
+    width: 100%
+}
+
+.content main section .card .info_tab nav {
+    background: var(--back);
+    /*! display: flex; */
+    /*! font-weight: 300; */
+}
+
+.content main section .card .info_tab nav .active {
+    background: white;
+    border-right: solid 1px var(--border);
+    border-bottom: solid 1px white;
+    color: var(--orange);
+}
+
+.ft-tab.active {
+    color: var(--orange);
+    border-bottom: none;
+}
+
+.active.ft-tab {
+    border-bottom: none;
+}
+
+.ft-tab.ft-tab-icon.active {
+    border-bottom: none !important;
+}
+
+.ft-contents .param {
+    position: relative;
+    width: 50%;
+    margin-bottom: 0.75rem;
+    max-width: 18rem;
+}
+
+.ft-contents .param span {
+    font-weight: 400;
+    /*! margin-left: 1.5rem; */
+    position: absolute;
+    left: 100%;
+    width: 58.3333%;
+}
+
+.ft-contents .param:after {
+    border-bottom: 1px dashed var(--icon);
+    bottom: 0;
+    content: '';
+    display: block;
+    /*! height: 20px; */
+    left: 0;
+    position: absolute;
+    width: 100%;
+    /*! margin-left: 41.6666%; */
 }
 
 .content main section .card .box {
