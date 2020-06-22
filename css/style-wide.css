@@ -159,3 +159,7 @@ display: flex;}
 footer .wrap .box {
     width: 25%;
 }
+.pagination{
+max-width: 66.6666%;
+justify-content: space-between;
+}

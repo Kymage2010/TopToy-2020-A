@@ -37,3 +37,7 @@ header .wrap .search {
 footer .wrap .box {
     width: 50%;
 }
+.pagination{
+max-width: 100%;
+justify-content: space-between;
+}

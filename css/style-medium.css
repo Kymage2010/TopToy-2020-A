@@ -108,3 +108,7 @@ flex-flow: row wrap;
 footer .wrap .box {
     width: 33.3333%;
 }
+.pagination{
+max-width: 100%;
+justify-content: space-between;
+}
