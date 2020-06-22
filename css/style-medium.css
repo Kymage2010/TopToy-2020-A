@@ -1,5 +1,5 @@
 header {
-	/*! background: #C9C */
+	/*! background: #C9C; */
 }
 header .wrap .logo {
 	width: 33.3333%;
@@ -111,4 +111,58 @@ footer .wrap .box {
 .pagination{
 max-width: 100%;
 justify-content: space-between;
+}
+.shopping_cart .wrap .item .cart_row .cart_pic {
+
+    width: 8rem;
+    margin: 0;
+}
+.shopping_cart .wrap .item .cart_row .cart_name {
+
+    /*! width: max-content; */
+    max-width: 10rem;
+    margin-right: 0.75rem;
+}
+.shopping_cart .wrap .item .cart_row{justify-content: space-between;/*! align-items: center; */padding-bottom: 0.75rem;margin-bottom: 0.75rem;}
+.shopping_cart .wrap .item .cart_row .cart_price {
+    
+   
+    width: auto;
+    min-width: 6rem;
+}
+.shopping_cart .wrap .item .cart_row .cart_count {
+
+    width: auto;
+    margin-left: auto;
+}
+.shopping_cart .wrap .item .cart_row .cart_total {
+
+    width: auto;
+    margin-left: auto;
+    min-width: 7rem;
+    margin: 0 0 0 auto;
+}
+.shopping_cart .wrap .item .title{
+/*! background: blue; */
+margin-bottom: 0.75rem;
+}
+.shopping_cart .wrap .item .cart_row .cart_count .count::before {
+padding-left: 0.75rem;
+}
+.shopping_cart .wrap .item .cart_row .cart_total .price::before {
+
+
+    padding-left: 0.75rem;
+
+}
+.shopping_cart .wrap .item .cart_row .cart_del {
+
+    top: -0.75rem;}
+.shopping_cart .wrap .item .shopping_total {
+    
+    justify-content: center;
+    
+    margin-left: auto;
+    max-width: 10rem;
+    margin-right: auto;
 }

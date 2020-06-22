@@ -1,5 +1,5 @@
 header {
-    
+ /*! background: red; */   
 }
 
 header .wrap .logo {
@@ -40,4 +40,46 @@ footer .wrap .box {
 .pagination{
 max-width: 100%;
 justify-content: space-between;
+}
+.shopping_cart .wrap .item .cart_row .cart_pic {
+
+    width: 8rem;
+}
+.shopping_cart .wrap .item .cart_row .cart_name {
+
+    /*! width: max-content; */
+    max-width: 10rem;
+    margin-right: 0.75rem;
+}
+.shopping_cart .wrap .item .cart_row{justify-content: space-between;}
+.shopping_cart .wrap .item .cart_row .cart_price {
+    
+   
+    width: auto;
+    min-width: 6rem;
+}
+.shopping_cart .wrap .item .cart_row .cart_count {
+
+    width: auto;
+    margin-left: auto;
+}
+.shopping_cart .wrap .item .cart_row .cart_total {
+
+    width: auto;
+    margin-left: auto;
+    min-width: 6rem;
+}
+.shopping_cart .wrap .item .title{
+/*! background: orange; */
+}
+.shopping_cart .wrap .item .cart_row .cart_del {
+
+    top: -1.5rem;}
+.shopping_cart .wrap .item .shopping_total {
+    
+    justify-content: center;
+    
+    margin-left: auto;
+    max-width: 10rem;
+    margin-right: auto;
 }
