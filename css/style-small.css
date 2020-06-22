@@ -77,7 +77,7 @@ justify-content: space-between;
     top: -1.5rem;}
 .shopping_cart .wrap .item .shopping_total {
     
-    justify-content: center;
+    /*! justify-content: center; */
     
     margin-left: auto;
     max-width: 10rem;
