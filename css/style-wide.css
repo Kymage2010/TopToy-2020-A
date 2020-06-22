@@ -194,19 +194,7 @@ justify-content: space-between;
     margin: 0 0 0 auto;
 }
 .shopping_cart .wrap .item .title{
-background: var(--border);
 margin-bottom: 0.75rem;
-border-left: solid 1px var(--border);
-border-radius: 1rem 1rem 0 0;
-border-right: solid 1px var(--border)aliceblue;
-border-top: solid 1px var(--border)aliceblue;
-max-width: 10rem;
-/*! text-align: center; */
-margin-left: auto;
-margin-right: auto;
-padding-top: 0.75rem;
-border-bottom: solid 1 var(--border);
-margin-top: 1.5rem;
 }
 .shopping_cart .wrap .item .cart_row .cart_count .count::before {
 padding-left: 0.75rem;
