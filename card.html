@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Карточка товара</title>
+    <!-- css -->
     <link href="css/style-all.css" rel="stylesheet">
     <link href="css/style-small.css" rel="stylesheet" type="text/css" media="only screen and (min-width:400px) and (max-width:650px)">
     <link href="css/style-medium.css" rel="stylesheet" type="text/css" media="only screen and (min-width:650px) and (max-width:1000px)">
@@ -12,6 +13,7 @@
     <link href="css/swiper.min.css" rel="stylesheet">
     <link href="css/fotorama.css" rel="stylesheet">
     <link href="css/jquery.flextabs.min.css" rel="stylesheet">
+    <!-- js -->
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/fotorama.js"></script>
@@ -40,13 +42,13 @@
             </div>
             <div class="icons">
                 <a href="#">
-                    <div class="icon brackets">
-                        <div class="count">98</div>
+                    <div class="icon brackets" onclick="shopShow()">
+                        <div class="count">0</div>
                     </div>
                 </a>
                 <a href="#">
-                    <div class="icon favorites">
-                        <div class="count">2</div>
+                    <div class="icon favorites" onclick="favoreShow()">
+                        <div class="count">0</div>
                     </div>
                 </a>
                 <a href="#">
@@ -67,7 +69,8 @@
                 <div class="title_nav">
                     <div class="box">
                         <div class="icon burger"></div>
-                        <h2>Для детей и родителей</h2> </div>
+                        <h2>Для детей и родителей</h2>
+                    </div>
                 </div>
                 <div class="menu_adaptive">
                     <div class="box">
@@ -112,12 +115,14 @@
                 </div>
                 <div class="review">
                     <div class="title">
-                        <h4><a href="#" title="Обзоры">Обзоры</a></h4> </div>
+                        <h4><a href="#" title="Обзоры">Обзоры</a></h4>
+                    </div>
                     <div class="box">
                         <div class="item">
                             <div class="rev">
                                 <div class="title">
-                                    <h3>Шаманский бубен для детей от 5 лет с ультразвуком</h3> </div>
+                                    <h3>Шаманский бубен для детей от 5 лет с ультразвуком</h3>
+                                </div>
                                 <div class="pic">
                                     <a href="#" title="Название товара"><img src="images/6909376-1.jpg" alt=" "></a>
                                 </div>
@@ -127,7 +132,8 @@
                             </div>
                             <div class="rev">
                                 <div class="title">
-                                    <h3>Развивающий игровой коврик от 1 года.</h3> </div>
+                                    <h3>Развивающий игровой коврик от 1 года.</h3>
+                                </div>
                                 <div class="pic">
                                     <a href="#" title="Название товара"><img src="images/7845675-1.jpg" alt=" "></a>
                                 </div>
@@ -163,13 +169,15 @@
                                     </div>
                                 </div>
                             </div>
+                            
                         </div>
                         <div class="desc">
                             <div class="box">
                                 <div class="item">
                                     <div class="text">
                                         <div class="title">
-                                            <h1>Волшебное Дерево / Каталка "Машинка с грибочками"</h1> </div>
+                                            <h1>Волшебное Дерево / Каталка "Машинка с грибочками"</h1>
+                                        </div>
                                         <p>Эту машинку легко держать в маленьких ручках, она отлично катается по поверхности, что увлекает малыша и помогает открывать мир своих возможностей, развивает координацию.</p>
                                         <p> Образные игрушки не являются точной копией или уменьшенной моделью реальных машин, они не перегружают психо-эмоциональное состояние ребёнка и открывают возможности для фантазирования. В комплекте 2 человечка и 3 грибочка.</p>
                                     </div>
@@ -258,7 +266,8 @@
                                             <div id="tab-3">
                                                 <div class="feedback">
                                                     <div class="name">
-                                                        <div class="icon log_in"></div>Вася Пупкин </div>
+                                                        <div class="icon log_in"></div>Вася Пупкин
+                                                    </div>
                                                     <div class="date">19 февраля 2017</div>
                                                     <div class="text">
                                                         <p>Здравствуйте, в грузовичок вашего производства поместятся эти грибочки?</p>
@@ -287,13 +296,17 @@
                             <div class="item">
                                 <div class="info_text">
                                     <div class="param">
-                                        <div class="icon warranty"></div><a href="#">Гарантия:</a><span>нет</span></div>
+                                        <div class="icon warranty"></div><a href="#">Гарантия:</a><span>нет</span>
+                                    </div>
                                     <div class="param">
-                                        <div class="icon return"></div><a href="#">Возврат/обмен:</a><span>в течении 14 дней</span></div>
+                                        <div class="icon return"></div><a href="#">Возврат/обмен:</a><span>в течении 14 дней</span>
+                                    </div>
                                     <div class="param">
-                                        <div class="icon logist"></div><a href="#">Доставка:</a><span>от 2-х дней</span></div>
+                                        <div class="icon logist"></div><a href="#">Доставка:</a><span>от 2-х дней</span>
+                                    </div>
                                     <div class="param">
-                                        <div class="icon sertif"></div><a href="#">Сертификат:</a><span>EAN, Ростест</span></div>
+                                        <div class="icon sertif"></div><a href="#">Сертификат:</a><span>EAN, Ростест</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -301,7 +314,9 @@
                             <div class="item">
                                 <div class="info_text">
                                     <div class="title">
-                                        <h3>Заголовок</h3></div>Рекомендации психологов и дополнительное описание неотразимости товара</div>
+                                        <h3>Заголовок</h3>
+                                    </div>Рекомендации психологов и дополнительное описание неотразимости товара
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -314,7 +329,8 @@
         <div class="wrap">
             <div class="box">
                 <div class="title">
-                    <h4>Мы принимаем к оплате:</h4> </div>
+                    <h4>Мы принимаем к оплате:</h4>
+                </div>
                 <ul>
                     <li>
                         <div class="icon visa"></div>
@@ -329,33 +345,40 @@
             </div>
             <div class="box">
                 <div class="title">
-                    <h4>Социальные сети:</h4> </div>
+                    <h4>Социальные сети:</h4>
+                </div>
                 <ul>
                     <li>
                         <a href="#">
-                            <div class="icon facebook"></div>Facebook </a>
+                            <div class="icon facebook"></div>Facebook
+                        </a>
                     </li>
                     <li>
                         <a href="#">
-                            <div class="icon vkontakte"></div>ВКонтакте </a>
+                            <div class="icon vkontakte"></div>ВКонтакте
+                        </a>
                     </li>
                     <li>
                         <a href="#">
-                            <div class="icon instagram"></div>Instagram </a>
+                            <div class="icon instagram"></div>Instagram
+                        </a>
                     </li>
                     <li>
                         <a href="#">
-                            <div class="icon twitter"></div>Twitter </a>
+                            <div class="icon twitter"></div>Twitter
+                        </a>
                     </li>
                     <li>
                         <a href="#">
-                            <div class="icon telegram"></div>Telegram </a>
+                            <div class="icon telegram"></div>Telegram
+                        </a>
                     </li>
                 </ul>
             </div>
             <div class="box">
                 <div class="title">
-                    <h4>Покупателям:</h4> </div>
+                    <h4>Покупателям:</h4>
+                </div>
                 <ul>
                     <li><a href="#">Доставка</a></li>
                     <li><a href="#">Оплата</a></li>
@@ -365,7 +388,8 @@
             </div>
             <div class="box">
                 <div class="title">
-                    <h4>Информация:</h4> </div>
+                    <h4>Информация:</h4>
+                </div>
                 <ul>
                     <li><a href="#">Контакты</a></li>
                     <li><a href="#">Условия конфиденциальности</a></li>
@@ -376,24 +400,131 @@
             <div class="copyright">toptoy.ru &copy; 2020</div>
         </div>
     </footer>
+    <!-- shopping start -->
+    <div id="shop" class="shopping_cart">
+        <div class="wrap">
+            <div class="box">
+                <div class="item">
+                    <div class="title">
+                        <div class="icon brackets"></div>Корзина
+                    </div>
+                    <div class="cart_row">
+                        <div class="cart_pic">
+                            <a href="#"><img src="images/10726397-1.jpg" alt=" "></a>
+                        </div>
+                        <div class="cart_name"><a href="#">Детский развивающий коврик с дугами "Мои первые игрушки"</a></div>
+                        <div class="cart_price">
+                            <div class="price"><span>75 000</span></div>
+                        </div>
+                        <div class="cart_count">
+                            <div class="count"> <span>
+                                    <button type="button" class="icon">−</button>
+                                    <input class="input_count" type="number" min="1" max="9999" step="1" value="1">
+                                    <button type="button" class="icon">+</button>
+                                </span> </div>
+                        </div>
+                        <div class="cart_total">
+                            <div class="price"><span>64 000</span></div>
+                        </div>
+                        <div class="icon cart_del"></div>
+                    </div>
+                    <!-- next -->
+                    <div class="cart_row">
+                        <div class="cart_pic">
+                            <a href="#"><img src="images/full_7Pg4mrk2.jpg" alt=" "></a>
+                        </div>
+                        <div class="cart_name"><a href="#">Бизиборд Большой Дом со светом</a></div>
+                        <div class="cart_price">
+                            <div class="price"><span>3 750</span></div>
+                        </div>
+                        <div class="cart_count">
+                            <div class="count"> <span>
+                                    <button type="button" class="icon">−</button>
+                                    <input class="input_count" type="number" min="1" max="9999" step="1" value="78">
+                                    <button type="button" class="icon">+</button>
+                                </span> </div>
+                        </div>
+                        <div class="cart_total">
+                            <div class="price"><span>128 000</span></div>
+                        </div>
+                        <div class="icon cart_del" title="Удалить"></div>
+                    </div>
+                    <div class="shopping_total">
+                        <p>Всего товаров: <span>49</span></p>На сумму:
+                        <div class="price">789 354</div>
+                    </div>
+                    <div class="accept">
+                        <input class="button" name="submit" id="submit" type="submit" value="Оформить">
+                        <input class="button" name="close" id="close" type="button" value="Закрыть" onclick="shopHide()"> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- shopping start -->
+    <div id="favore" class="shopping_cart">
+        <div class="wrap">
+            <div class="box">
+                <div class="item">
+                    <div class="title">
+                        <div class="icon favorite"></div>Понравилось
+                    </div>
+                    <div class="cart_row">
+                        <div class="cart_pic">
+                            <a href="#"><img src="images/10726397-1.jpg" alt=" "></a>
+                        </div>
+                        <div class="cart_name"><a href="#">Детский развивающий коврик с дугами "Мои первые игрушки"</a></div>
+                        <div class="cart_price">
+                            <div class="price"><span>75 000</span></div>
+                        </div>
+                        <div class="icon bracket">
+                            <a href="#" title="Добавить в корзину"> </a>
+                        </div>
+                        <div class="icon cart_del"></div>
+                    </div>
+                    <!-- next -->
+                    <div class="cart_row">
+                        <div class="cart_pic">
+                            <a href="#"><img src="images/full_7Pg4mrk2.jpg" alt=" "></a>
+                        </div>
+                        <div class="cart_name"><a href="#">Бизиборд Большой Дом со светом</a></div>
+                        <div class="cart_price">
+                            <div class="price"><span>3 750</span></div>
+                        </div>
+                        <div class="icon bracket">
+                            <a href="#" title="Добавить в корзину"> </a>
+                        </div>
+                        <div class="icon cart_del" title="Удалить"></div>
+                    </div>
+                    <div class="shopping_total">
+                        <p>Всего товаров: <span>49</span></p>На сумму:
+                        <div class="price">789 354</div>
+                    </div>
+                    <div class="accept">
+                        <input class="button" name="close" id="close" type="button" value="Закрыть" onclick="favoreHide()"> </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="js/es.js"></script>
     <script>
         $('[data-ft]').flexTabs({
-            breakpoint: 600
-            , collapsible: false
-        , });
+            breakpoint: 600,
+            collapsible: false,
+        });
+
     </script>
     <script>
         $('.fotorama').fotorama({
-            ratio: 16 / 9
-            , allowfullscreen: true
-            , nav: 'thumbs'
-            , navwidth: '100%'
-            , loop: true, //thumbwidth: '160',
+            ratio: 16 / 9,
+            allowfullscreen: true,
+            nav: 'thumbs',
+            navwidth: '100%',
+            loop: true, //thumbwidth: '160',
             click: false, //thumbheight: 90,
             //thumbmargin: 16,
             //thumbborderwidth: '1',
         });
+
     </script>
     <!-- конец -->
 </body>

@@ -78,11 +78,11 @@ $(document).ready(function () {
     });
     //Функция отображения PopUp
     function shopShow() {
-        $("#shop").show("slow");
+        $("#shop").slideDown("slow").css("top","0");
     }
     //Функция скрытия PopUp
     function shopHide() {
-        $("#shop").hide("slow");
+        $("#shop").slideUp("slow");
     }
     /**/
 
@@ -93,10 +93,10 @@ $(document).ready(function () {
     });
     //Функция отображения PopUp
     function favoreShow() {
-        $("#favore").show("slow");
+        $("#favore").slideDown("slow").css("top","0");
     }
     //Функция скрытия PopUp
     function favoreHide() {
-        $("#favore").hide("slow");
+        $("#favore").slideUp("slow");
     }
     /**/
