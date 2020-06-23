@@ -1,17 +1,16 @@
 var swiper = new Swiper('.swiper-container', {
     navigation: {
-        nextEl: '.next',
-        prevEl: '.prev',
-    },
-    loop: true,
-});
+        nextEl: '.next'
+        , prevEl: '.prev'
+    , }
+    , loop: true
+, });
 $(document).ready(function () {
-    var li = $('ul.accord > li.parent'),
-        menuOpenItem = parseInt(getcookie("openMainMenu")),
-        filterShow = parseInt(getcookie("openTopFilter")),
-        $close_box = $(".close_box"),
-        $filter_show = $("#filter_show");
-
+    var li = $('ul.accord > li.parent')
+        , menuOpenItem = parseInt(getcookie("openMainMenu"))
+        , filterShow = parseInt(getcookie("openTopFilter"))
+        , $close_box = $(".close_box")
+        , $filter_show = $("#filter_show");
     $('ul.accord > li.parent > a').click(function (e) {
         e.preventDefault();
         var state = $(this).next('.sub_parent').css("display");
@@ -20,12 +19,12 @@ $(document).ready(function () {
             $('ul.accord > li.parent > a').removeClass('active');
             $(this).addClass('active').next('.sub_parent').slideDown('normal');
             setcookie("openMainMenu", $(this).parent("li").index(), (new Date).getTime() + (20 * 365 * 24 * 60 * 60 * 1000));
-        } else {
+        }
+        else {
             $(this).addClass('active').next('.sub_parent').slideUp('normal');
         }
         return false;
     });
-
     $(".sub_parent li a").on("click", function () {
         $(".sub_parent li a").removeClass("active");
         $(this).addClass("active");
@@ -35,40 +34,69 @@ $(document).ready(function () {
         var $md = $(".menu_adaptive");
         if ($md.hasClass("show")) {
             $md.removeClass("show");
-        } else {
+        }
+        else {
             $md.addClass("show");
         }
     });
-
-    $close_box.on("click", function(){
+    $close_box.on("click", function () {
         let $filter = $("#filter_show");
-        if($filter.css("display") === "none"){
+        if ($filter.css("display") === "none") {
             $filter.slideDown("fast");
             $(this).addClass("open");
             setcookie("openTopFilter", "1", (new Date).getTime() + (20 * 365 * 24 * 60 * 60 * 1000));
-        }else{
+        }
+        else {
             $filter.slideUp("fast");
             $(this).removeClass("open");
             setcookie("openTopFilter", "0", (new Date).getTime() + (20 * 365 * 24 * 60 * 60 * 1000));
         }
     });
-
-
     $(li[menuOpenItem]).find("a").click();
-    if(filterShow === 1){
+    if (filterShow === 1) {
         $filter_show.css("display", "flex");
         $close_box.addClass("open");
-    }else{
+    }
+    else {
         $filter_show.css("display", "none");
         $close_box.removeClass("open");
     }
-
-    
+    /*header stick*/
     function Header() {
-    0 < $(window).scrollTop() ? ($("header").css("position", "sticky").css("box-shadow", "0 -3px 6px 4px var(--icon)").on("transitionend webkitTransitionEnd oTransitionEnd otransitionend")) : ($("header").css("position", "inherit").css("box-shadow", "none").on("transitionend webkitTransitionEnd oTransitionEnd otransitionend"))
-}
-Header(), $(window).scroll(function () {
-    Header()
-});
+        0 < $(window).scrollTop() ? ($("header").css("position", "sticky").css("box-shadow", "0 -3px 6px 4px var(--icon)").on("transitionend webkitTransitionEnd oTransitionEnd otransitionend")) : ($("header").css("position", "inherit").css("box-shadow", "none").on("transitionend webkitTransitionEnd oTransitionEnd otransitionend"))
+    }
+    Header(), $(window).scroll(function () {
+        Header()
+    });
     
 });
+
+/*кривые ручки*/
+    $(document).ready(function () {
+        //Скрыть PopUp при загрузке страницы    
+        shopHide();
+    });
+    //Функция отображения PopUp
+    function shopShow() {
+        $("#shop").show("slow");
+    }
+    //Функция скрытия PopUp
+    function shopHide() {
+        $("#shop").hide("slow");
+    }
+    /**/
+
+/*кривые ручки 2*/
+    $(document).ready(function () {
+        //Скрыть PopUp при загрузке страницы    
+        favoreHide();
+    });
+    //Функция отображения PopUp
+    function favoreShow() {
+        $("#favore").show("slow");
+    }
+    //Функция скрытия PopUp
+    function favoreHide() {
+        $("#favore").hide("slow");
+    }
+    /**/
