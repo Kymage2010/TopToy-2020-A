@@ -1629,7 +1629,7 @@ footer .box ul li .icon {
     margin-right: 0.75rem;
 }
 
-#favore {}
+#favore {display: none;}
 
 #favore .icon.favorite {
     background: url(../images/icon_favorite_on.svg) no-repeat center center;
