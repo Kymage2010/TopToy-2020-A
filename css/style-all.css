@@ -1065,7 +1065,7 @@ footer .box ul li .icon {
 
 .close_box {
     text-align: center;
-    background: var(--icon);
+    background: var(--orange);
     padding: 0 0.75rem;
     margin-left: auto;
     line-height: 2rem;
@@ -1286,6 +1286,7 @@ footer .box ul li .icon {
 
 .content main section .card .info_tab nav {
     background: var(--back);
+    /*! display: flex; */
 }
 
 .content main section .card .info_tab nav .active {
@@ -1656,5 +1657,5 @@ footer .box ul li .icon {
 }
 
 #favore .icon.bracket {
-    margin-left: auto;
+    margin: 0 0 0.75rem auto;
 }
