@@ -105,7 +105,7 @@ header .wrap .icons {
 
 .content .wrap aside .box .item #catalog {
     padding: 1.5rem;
-    font-size: 1rem;
+    /*! font-size: 1rem; */
 }
 
 .content .wrap aside .box .item #catalog ul {}
@@ -115,7 +115,7 @@ header .wrap .icons {
 }
 
 .content .wrap aside .box .item #catalog ul li a {
-    text-decoration: underline;
+    /*! text-decoration: underline; */
 }
 
 .content .wrap aside .box .item #catalog ul li ul {
@@ -138,11 +138,16 @@ header .wrap .icons {
 }
 
 .content .wrap aside .menu_adaptive .box .item #catalog .accord .parent .active {
-    color: var(--orange);
-    text-decoration: none;
+    /*! color: var(--orange); */
+    /*! text-decoration: none; */
+    /*! border-bottom: none; */
 }
-.content main section .card .bread {
-    margin: 0.75rem 0;}
+.bread {
+    margin: 0.75rem 0;
+    /*! line-height: 0.75rem; */
+    /*! \.bread\ \{\ margin: 0.75rem 0; */
+    line-height: calc(0.75rem + 2px);
+}
 .content main section .card .photo {
     width: calc(100/9*5%);
 
@@ -156,9 +161,6 @@ header .wrap .icons {
 
 .content main section .card .info_tab nav{
 display: flex;}
-footer .wrap .box {
-    width: 25%;
-}
 .pagination{
 max-width: 66.6666%;
 justify-content: space-between;
@@ -215,4 +217,11 @@ padding-left: 0.75rem;
     margin-left: auto;
     max-width: 10rem;
     margin-right: auto;
+}footer .wrap .box {
+    width: 25%;
+}
+.content main section .order .service{
+
+width: 33.3333%;
+
 }

@@ -89,8 +89,10 @@ header .wrap .phone {
 .review {
     display: block;
 }
-.content main section .card .bread {
-    margin: 0.75rem 0;}
+.bread {
+    margin: 0.75rem 0;
+    line-height: calc(0.75rem + 2px);
+}
 .content main section .card .photo {
    /*! width: 41.6666%; */ 
    
@@ -104,9 +106,6 @@ header .wrap .phone {
 .content main section .card .info_tab nav{
 display: flex;
 flex-flow: row wrap;
-}
-footer .wrap .box {
-    width: 33.3333%;
 }
 .pagination{
 max-width: 100%;
@@ -165,4 +164,13 @@ padding-left: 0.75rem;
     margin-left: auto;
     max-width: 10rem;
     margin-right: auto;
+}footer .wrap .box {
+    width: 33.3333%;
+}
+.content main section .order .service{
+
+
+
+
+width: 50%;
 }
