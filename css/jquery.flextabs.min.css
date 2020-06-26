@@ -22,7 +22,7 @@
 }
 .ft-tabs>.ft-contents>.ft-content {
  overflow:hidden;
- padding: 1.5rem;
+ padding: 1.5rem 1.5rem 0.75rem 1.5rem;
  font-weight: 300;
 }
 .ft-accordion>.ft-nav,
