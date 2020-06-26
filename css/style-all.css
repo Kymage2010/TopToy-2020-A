@@ -263,7 +263,7 @@ h4 {
 }
 .log_in .count{
 background: var(--icon);}
-.info {
+.inform {
     /*! background: var(--icon); */
     background: url(../images/icon_info_white.svg) var(--icon) no-repeat center center;
 }
@@ -300,31 +300,31 @@ background: var(--icon);}
     background: url(../images/icon_instagram.svg) var(--orange) no-repeat center center;
 }
 
-.icon.warranty {
+.warranty {
     background: url(../images/icon_warranty.svg) var(--icon) no-repeat center center;
     margin-right: 0.75rem;
     background-size: 75%;
 }
 
-.icon.logist {
+.logist {
     background: url(../images/icon_logist.svg) var(--icon) no-repeat center center;
     margin-right: 0.75rem;
     background-size: 75%;
 }
 
-.icon.sertif {
+.sertif {
     background: url(../images/icon_sertif.svg) var(--icon) no-repeat center center;
     margin-right: 0.75rem;
     background-size: 75%;
 }
 
-.icon.return {
+.return {
     background: url(../images/icon_return.svg) var(--icon) no-repeat center center;
     margin-right: 0.75rem;
     background-size: 75%;
 }
 
-.icon.cart_del {
+.cart_del {
     background: url(../images/icon_close.svg) red no-repeat center center;
     background-size: 75%;
 }
@@ -1734,7 +1734,7 @@ footer .box ul li .icon {
     /*! margin: 0 0 0.375rem 0; */
 }
 
-.content main section .order .logist {
+.content main section .order .logistic {
     padding: 1.5rem;
     margin-bottom: -0.75rem;
 }
