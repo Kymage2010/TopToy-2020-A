@@ -225,3 +225,8 @@ padding-left: 0.75rem;
 width: 33.3333%;
 
 }
+.content main section .order input {
+max-width: 50%}
+.content main section .order textarea{
+height: 10rem;
+width: 50%;}
