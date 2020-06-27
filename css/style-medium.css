@@ -60,7 +60,7 @@ header .wrap .phone {
 }
 
 .content .wrap aside .box .item #catalog ul li a {
-    text-decoration: underline;
+    /*! text-decoration: underline; */
 }
 
 .content .wrap aside .box .item #catalog ul li ul {
