@@ -62,12 +62,12 @@ $(document).ready(function () {
         $close_box.removeClass("open");
     }
     /*header stick*/
-    function Header() {
-      65 < $(window).scrollTop() ? ($("header").css("position", "sticky").css("box-shadow", "0 -3px 6px 4px var(--icon)").css("padding", "0").on("transitionend webkitTransitionEnd oTransitionEnd otransitionend")) : ($("header").css("position", "inherit").css("box-shadow", "none").css("padding", "0.75rem 0").on("transitionend webkitTransitionEnd oTransitionEnd otransitionend"))
-    }
-    Header(), $(window).scroll(function () {
-        Header()
-    });
+   // function Header() {
+   //   65 < $(window).scrollTop() ? ($("header").css("position", "sticky").css("box-shadow", "0 -3px 6px 4px var(--icon)").css("padding", //"0").on("transitionend webkitTransitionEnd oTransitionEnd otransitionend")) : ($("header").css("position", "inherit").css("box-shadow", //"none").css("padding", "0.75rem 0").on("transitionend webkitTransitionEnd oTransitionEnd otransitionend"))
+   // }
+   // Header(), $(window).scroll(function () {
+   //     Header()
+   // });
     
 });
 
