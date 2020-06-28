@@ -100,3 +100,4 @@ $(document).ready(function () {
         $("#favore").slideUp("slow");
     }
     /**/
+
