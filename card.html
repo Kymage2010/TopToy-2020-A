@@ -4,15 +4,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Карточка товара</title>
+    <title>Карточка</title>
     <!-- css -->
     <link href="css/style-all.css" rel="stylesheet">
-    <link href="css/style-small.css" rel="stylesheet" type="text/css" media="only screen and (min-width:400px) and (max-width:650px)">
-    <link href="css/style-medium.css" rel="stylesheet" type="text/css" media="only screen and (min-width:650px) and (max-width:1000px)">
-    <link href="css/style-wide.css" rel="stylesheet" type="text/css" media="only screen and (min-width:1000px)">
+    <link href="css/style-small.css" rel="stylesheet" media="only screen and (min-width:400px) and (max-width:650px)">
+    <link href="css/style-medium.css" rel="stylesheet" media="only screen and (min-width:650px) and (max-width:1000px)">
+    <link href="css/style-wide.css" rel="stylesheet" media="only screen and (min-width:1000px)">
     <link href="css/swiper.min.css" rel="stylesheet">
     <link href="css/fotorama.css" rel="stylesheet">
     <link href="css/jquery.flextabs.min.css" rel="stylesheet">
+    <link href="css/jquery.tipsy.css" rel="stylesheet" media="all">
     <!-- js -->
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/swiper.min.js"></script>
@@ -41,23 +42,44 @@
                 <div class="box"><a href="tel:84994040615">499 40-40-615</a></div>
             </div>
             <div class="icons">
-                <a href="#">
-                    <div class="icon brackets" onclick="shopShow()">
-                        <div class="count">0</div>
+                <div class="icon brackets" onclick="shopShow()" title="Корзина">
+                    <div class="count">0</div>
+                </div>
+                <div class="icon favorites" onclick="favoreShow()" title="Понравилось">
+                    <div class="count">0</div>
+                </div>
+                <div class="icon log_in">
+                    <div class="count off" title="Вход"></div>
+                    <!-- login -->
+                    <div class="login_up" id="login_popup">
+                        <div class="box">
+                            <div class="title">Вход</div>
+                            <form action="" method="post" name="form_login">
+                                <div class="block">
+                                    <div class="icon mail"></div>
+                                    <input type="email" name="email" id="login_email" required placeholder="Почта" />
+                                </div>
+                                <div class="block">
+                                    <div class="icon lock"></div>
+                                    <input type="text" name="key" id="login_pass" required placeholder="Пароль" />
+                                </div>
+                                <button class="button" id="enter" type="button">Войти</button>
+                                <div class="block remember">Напомнить пароль?</div>
+                            </form>
+                            <div class="block">
+                                <div class="social">
+                                    <div class="icon google" title="Войти через Google"></div>
+                                    <div class="icon facebook" title="Войти через Facebook"></div>
+                                    <div class="icon twitter" title="Войти через Twitter"></div>
+                                    <div class="icon vkontakte" title="Войти через ВКонтакте"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </a>
+                    <!-- login end -->
+                </div>
                 <a href="#">
-                    <div class="icon favorites" onclick="favoreShow()">
-                        <div class="count">0</div>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="icon log_in">
-                        <div class="count">&#10004;</div>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="icon inform"></div>
+                    <div class="icon inform" title="Информация для покупателей"></div>
                 </a>
             </div>
         </div>
@@ -502,6 +524,20 @@
             </div>
         </div>
     </div>
+    <script src="js/jquery.tipsy.min.js"></script>
+    <script type="text/javascript">
+        $('[title]').tipsy({
+            arrowWidth: 10,
+            cls: null,
+            duration: 150,
+            offset: 7,
+            position: 'top-center',
+            trigger: 'hover',
+            onShow: null,
+            onHide: null
+        });
+
+    </script>
     <script src="js/es.js"></script>
     <script>
         $('[data-ft]').flexTabs({

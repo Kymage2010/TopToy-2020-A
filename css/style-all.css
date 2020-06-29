@@ -273,12 +273,14 @@ h4 {
     cursor: pointer;
 }
 
-.on{
+.on {
     background: url(../images/icon_log_in.svg) var(--icon) no-repeat center center;
 }
-.off{
+
+.off {
     background: url(../images/icon_off.svg) var(--icon) no-repeat center center;
 }
+
 .inform {
     /*! background: var(--icon); */
     background: url(../images/icon_info_white.svg) var(--icon) no-repeat center center;
@@ -319,6 +321,9 @@ h4 {
 .google {
     background: url(../images/icon_google.svg) no-repeat center center;
 }
+.youtube{
+background: url(../images/icon_youtube.svg) no-repeat center center;
+}
 .warranty {
     background: url(../images/icon_warranty.svg) var(--icon) no-repeat center center;
     margin-right: 0.75rem;
@@ -347,12 +352,22 @@ h4 {
     background: url(../images/icon_close.svg) red no-repeat center center;
     background-size: 75%;
 }
+
 .mail {
-background: url(../images/icon_mail.svg) no-repeat center center;
-    background-size: 75%;}
+    background: url(../images/icon_mail.svg) white no-repeat center center;
+    background-size: 60%;
+}
+
 .lock {
-background: url(../images/icon_lock.svg) no-repeat center center;
-    background-size: 75%;}
+    background: url(../images/icon_lock.svg) white no-repeat center center;
+    background-size: 60%;
+}
+
+.look {
+    background: url(../images/icon_look.svg) no-repeat center center;
+    background-size: 60%;
+}
+
 .icon {
     height: 2rem;
     width: 2rem;
@@ -397,6 +412,16 @@ background: url(../images/icon_lock.svg) no-repeat center center;
     transition: all .4s;
     border-radius: 0 1rem 1rem 0;
     margin-left: -0.75rem;
+}
+
+.menu_adaptive .item .lk_name .title {
+    /*! background: red; */
+    border-left: none;
+    margin: 1.5rem;
+    padding: 0 0 1.5rem 0;
+    font-size: 1rem;
+    font-weight: 500;
+    border-bottom: dotted 1px var(--border);
 }
 
 .menu_adaptive.show {
@@ -1648,7 +1673,16 @@ header .wrap .icons {
 
 /*login*/
 
-.login_up {
+#login_popup {
+    display: none;
+}
+
+#logout_popup {
+    display: none;
+}
+
+.login_up,
+.logout_up {
     /*! background: red; */
     position: absolute;
     top: 2rem;
@@ -1663,7 +1697,16 @@ header .wrap .icons {
     /*! left: auto; */
 }
 
-.login_up .box {
+.login_up #exit {
+    background: var(--icon);
+}
+
+.login_up #lk {
+    background: var(--orange);
+}
+
+.login_up .box,
+.logout_up .box {
     /*! position: relative; */
     background: var(--icon);
     border-radius: 1rem 0 1rem 1rem;
@@ -1671,27 +1714,48 @@ header .wrap .icons {
     /*! text-align: center; */
     box-shadow: 0 4px 7px -3px var(--font);
 }
-.login_up .box form{
-margin-bottom: 0.75rem;}
-.login_up .box .block{
-display: flex;
-/*! align-items: center; */
-justify-content: center;
-/*! justify-content: space-between; */
-/*! justify-content: flex-end; */
+
+.login_up .box form {
+    margin-bottom: 0.75rem;
 }
-.login_up .box .block .icon{margin: 0 0.375rem 0.375rem -0.375rem;}
+
+.login_up .box .block {
+    display: flex;
+    /*! align-items: center; */
+    justify-content: center;
+    /*! justify-content: space-between; */
+    /*! justify-content: flex-end; */
+}
+
+.login_up .box .block .icon {
+    /*! margin: 0 0 0.375rem -0.375rem; */
+    /*! border-radius: 3px; */
+    /*! border-top: solid 2px rgba(255,255,255,1); */
+    /*! border-bottom: solid 2px rgba(255,255,255,1); */
+    /*! border-left: solid 2px rgba(255,255,255,1); */
+}
+
 .login_up .box .block input {
     /*! line-height: 2rem; */
     margin-bottom: 0.75rem;
     /*! max-width: 12rem; */
     /*! width: 14rem; */
-    padding: 0.375rem 0.75rem;
+    padding: 0.375rem 0;
     font-family: 'Roboto', sans-serif;
     height: 2rem;
 }
-.login_up .box .remember{/*! text-align: center; *//*! display: inline-block; */font-size: 0.75rem;/*! border-bottom: dotted 1px white; *//*! width: 7.1rem; *//*! margin: 0.75rem auto; *//*! margin-left: 1rem; */cursor: pointer;text-decoration: underline dotted;}
 
+.login_up .box .remember {
+    /*! text-align: center; */
+    /*! display: inline-block; */
+    font-size: 0.75rem;
+    /*! border-bottom: dotted 1px white; */
+    /*! width: 7.1rem; */
+    /*! margin: 0.75rem auto; */
+    /*! margin-left: 1rem; */
+    cursor: pointer;
+    text-decoration: underline dotted;
+}
 
 .login_up .box .button {
     border: 1px solid white;
@@ -1701,11 +1765,21 @@ justify-content: center;
     margin: 0.75rem auto;
     display: block;
 }
-.login_up .title {margin-bottom: 0.75rem;text-align: center;font-weight: 500;font-size: 0.75rem;}
-.login_up .box .block .social .icon{
-margin: 1.75rem 0.375rem 0 0;
-cursor: pointer;
+
+.login_up .title {
+    margin-bottom: 0.75rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: 0.75rem;
 }
+
+.login_up .box .block .social .icon {
+    margin: 0.75rem 0.375rem 0 0;
+    cursor: pointer;
+    border: none;
+}
+
+
 /*Корзина*/
 
 #shop {
@@ -1897,6 +1971,8 @@ footer .box ul li .icon {
     font-weight: 300;
     color: var(--icon);
     margin-top: 0.375rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
 }
 
 .content main section .order .block .price {
@@ -2003,4 +2079,124 @@ footer .box ul li .icon {
 .content main section .order .politic a {
     display: inline;
     border-bottom: dotted 1px var(--icon);
+}
+
+.content main section .lk {
+    width: 100%
+}
+
+.content main section .lk .box {
+    width: 100%
+}
+
+.content main section .lk .box .item {
+    padding: 1.5rem;
+}
+
+.content main section .lk .box .item .title {
+    margin: 0 0 1.5rem 0;
+    padding: 0;
+    border-left: none;
+    text-decoration: none;
+    color: var(--orange);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.content main section .lk .box .item .row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.content main section .lk .box .item .row:nth-child(odd) {
+    background: var(--border);
+}
+
+.content main section .lk .box .item .row .cell {
+    padding: 0.375rem;
+    flex: 0 1 auto;
+    font-weight: 300;
+    width: 50%;
+    font-size: 0.75rem;
+    line-height: 2rem;
+    height: 2.75rem;
+}
+
+.content main section .lk .box .item .row .cell .icon {
+    display: block;
+    height: 0.875rem;
+    width: 2rem;
+    padding: 0;
+    margin: 0;
+    margin-left: -0.6rem;
+}
+
+.content main section .lk .box .item .row .cell a {
+    display: inline-block;
+    /*! background: aquamarine; */
+}
+
+.content main section .lk .box .item .row .price {
+    font-weight: 300;
+    font-size: 0.75rem;
+    margin: 0;
+    /*! padding: 0; */
+}
+
+.content main section .lk .box .item .row .price:after {
+    line-height: inherit;
+    font-size: 0.75rem;
+}
+
+.content main section .lk .box .item .row .header {
+    font-weight: 500;
+    display: none;
+}
+
+.content main section .lk .box .item .row .finish {
+    color: var(--green);
+}
+
+.content main section .lk .box .item .row .cancel {
+    color: red
+}
+
+.content main section .lk .box .item .row .num:before {
+    content: '№';
+
+}
+
+.content main section .lk .box .item .row .date:before {
+    content: 'Дата:';
+
+}
+
+.content main section .lk .box .item .row .total:before {
+    content: 'Товаров:';
+
+}
+
+.content main section .lk .box .item .row .price:before {
+    content: 'На сумму:';
+   
+    text-align: left;
+}
+
+.content main section .lk .box .item .row .looks:before {
+    content: 'Просмотр:';
+
+}
+
+.content main section .lk .box .item .row .status:before {
+    content: 'Статус:';
+    
+}
+.content main section .lk .box .item .row .cell:before{
+    padding-right: 0.375rem;
+    width: 37%;
+    display: inline-block;
+    font-weight: 500;
+    color: var(--font);
+    /*! text-align: right; */
+    /*! background: aliceblue; */
 }

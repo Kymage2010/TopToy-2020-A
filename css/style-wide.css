@@ -230,3 +230,71 @@ max-width: 50%}
 .content main section .order textarea{
 height: 10rem;
 width: 50%;}
+
+/* Личный кабинет */
+.content main section .lk {
+    width: 100%
+}
+
+.content main section .lk .box {
+    width: 100%
+}
+
+.content main section .lk .box .item {
+    padding: 1.5rem;
+}
+
+.content main section .lk .box .item .title {
+    margin: 0 0 1.5rem 0;
+    padding: 0;
+    border-left: none;
+    text-decoration: none;
+    color: var(--orange);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.content main section .lk .box .item .row {
+    display: flex;
+    flex-flow: row wrap;
+}
+.content main section .lk .box .item .row:nth-child(odd){
+background: var(--border);}
+.content main section .lk .box .item .row .cell {
+    padding: 0.375rem;
+    flex: 0 1 auto;
+    font-weight: 300;
+    width: calc(100/6 * 1%);
+    font-size: 0.75rem;
+    line-height: 2rem;
+    height: 2.75rem;
+}
+.content main section .lk .box .item .row .cell .price{font-weight: 300;font-size: 0.75rem;margin: 0;/*! padding: 0; */}
+.content main section .lk .box .item .row .cell .price:after{line-height: inherit;font-size: 0.75rem;}
+.content main section .lk .box .item .row .header {
+    font-weight: 500;
+    display: block;
+}
+.content main section .lk .box .item .row .finish{
+color: var(--green);}
+.content main section .lk .box .item .row .cancel{
+color: red}
+.content main section .lk .box .item .row .num:before {
+display: none;}
+
+.content main section .lk .box .item .row .date:before {
+display: none;}
+
+.content main section .lk .box .item .row .total:before {
+display: none;}
+
+.content main section .lk .box .item .row .price:before {
+display: none;}
+.content main section .lk .box .item .row .looks:before {
+display: none;}
+.content main section .lk .box .item .row .status:before {
+display: none;}
+.content main section .lk .box .item .row .cell .icon{
+margin-left: 0;
+height: 2rem;
+}
