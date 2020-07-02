@@ -2118,8 +2118,10 @@ footer .box ul li .icon {
     font-weight: 300;
     width: 50%;
     font-size: 0.75rem;
-    line-height: 2rem;
+    /*! line-height: 2rem; */
     height: 2.75rem;
+    display: flex;
+    align-items: center;
 }
 
 .content main section .lk .box .item .row .cell .icon {
@@ -2193,7 +2195,7 @@ footer .box ul li .icon {
 }
 .content main section .lk .box .item .row .cell:before{
     padding-right: 0.375rem;
-    width: 37%;
+    width: 48%;
     display: inline-block;
     font-weight: 500;
     color: var(--font);
