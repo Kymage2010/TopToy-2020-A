@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Личный кабинет (история)</title>
+    <title>Личный кабинет (Рассылки)</title>
     <!-- css -->
     <link href="css/style-all.css" rel="stylesheet">
     <link href="css/style-small.css" rel="stylesheet" media="only screen and (min-width:400px) and (max-width:650px)">
@@ -57,10 +57,12 @@
                             <form action="" method="post" name="form_login">
                                 <div class="block">
                                     <div class="icon mail"></div>
-                                    <input type="email" name="email" id="login_email" required placeholder="Почта" /> </div>
+                                    <input type="email" name="email" id="login_email" required placeholder="Почта" />
+                                </div>
                                 <div class="block">
                                     <div class="icon lock"></div>
-                                    <input type="text" name="key" id="login_pass" required placeholder="Пароль" /> </div>
+                                    <input type="text" name="key" id="login_pass" required placeholder="Пароль" />
+                                </div>
                                 <button class="button" id="enter" type="button">Войти</button>
                                 <div class="block remember">Напомнить пароль?</div>
                             </form>
@@ -89,7 +91,8 @@
                 <div class="title_nav">
                     <div class="box">
                         <div class="icon burger"></div>
-                        <h2>Личный кабинет</h2> </div>
+                        <h2>Личный кабинет</h2>
+                    </div>
                 </div>
                 <div class="menu_adaptive">
                     <div class="box">
@@ -116,107 +119,33 @@
             </aside>
             <main>
                 <section>
-                    <div class="lk">
+                    <div class="order">
                         <div class="box">
                             <div class="bread">
                                 <ul>
                                     <li><a href="#">Главная</a></li>
                                     <li><a href="lk.html">Личный кабинет</a></li>
-                                    <li class="last">История заказов</li>
+                                    <li class="last">Информационные рассылки</li>
                                 </ul>
                             </div>
                         </div>
                         <!-- form order -->
-                        <div class="box">
-                            <div class="item">
-                                <div class="title">История заказов</div>
-                                <div class="row">
-                                    <div class="cell header">Номер</div>
-                                    <div class="cell header">Дата</div>
-                                    <div class="cell header">Товаров</div>
-                                    <div class="cell header">Сумма</div>
-                                    <div class="cell header">Просмотр</div>
-                                    <div class="cell header">Статус</div>
-                                </div>
-                                <div class="row">
-                                    <div class="cell num">31-05-20-000001</div>
-                                    <div class="cell date">18 05 2020</div>
-                                    <div class="cell total">56</div>
-                                    <div class="cell price">487 594</div>
-                                    <div class="cell looks">
-                                        <a href="#" id="show_history">
-                                            <div class="icon look" title="посмотреть содержимое заказа"></div>
-                                        </a>
+                        <form action="" method="post" name="form_lk_sender">
+                            <div class="box">
+                                <div class="item">
+                                    <div class="payment">
+                                        <div class="title">Получать информационные сообщения</div>
+                                        <label class="checkcontainer">Изменение статуса заказа
+                                            <input type="checkbox" name=" "> <span class="checkmark"></span> </label>
+                                        <label class="checkcontainer">Скидки и распродажи
+                                            <input type="checkbox" name=" "> <span class="checkmark"></span> </label>
+                                        <label class="checkcontainer">Новые поступления
+                                            <input type="checkbox" name=" "> <span class="checkmark"></span> </label>
+                                        <button class="button" type="submit">Сохранить</button>
                                     </div>
-                                    <div class="cell status">В обработке</div>
-                                </div>
-                                <div class="row">
-                                    <div class="cell num">01-09-20-000759</div>
-                                    <div class="cell date">13 07 2020</div>
-                                    <div class="cell total">2</div>
-                                    <div class="cell price">1 594</div>
-                                    <div class="cell looks">
-                                        <a href="#">
-                                            <div class="icon look" title="посмотреть содержимое заказа"></div>
-                                        </a>
-                                    </div>
-                                    <div class="cell cancel status">Отменён</div>
-                                </div>
-                                <div class="row">
-                                    <div class="cell num">31-05-20-000001</div>
-                                    <div class="cell date">18 05 2020</div>
-                                    <div class="cell total">12</div>
-                                    <div class="cell price">87 594</div>
-                                    <div class="cell looks">
-                                        <a href="#">
-                                            <div class="icon look" title="посмотреть содержимое заказа"></div>
-                                        </a>
-                                    </div>
-                                    <div class="cell status">Доставка</div>
-                                </div>
-                                <div class="row">
-                                    <div class="cell num">01-09-20-000759</div>
-                                    <div class="cell date">13 07 2020</div>
-                                    <div class="cell total">2</div>
-                                    <div class="cell price">1 594</div>
-                                    <div class="cell looks">
-                                        <a href="#">
-                                            <div class="icon look" title="посмотреть содержимое заказа"></div>
-                                        </a>
-                                    </div>
-                                    <div class="cell status">Подтверждён</div>
-                                </div>
-                                <div class="row">
-                                    <div class="cell num">01-09-20-000759</div>
-                                    <div class="cell date">13 07 2020</div>
-                                    <div class="cell total">2</div>
-                                    <div class="cell price">1 594</div>
-                                    <div class="cell looks">
-                                        <a href="#">
-                                            <div class="icon look" title="посмотреть содержимое заказа"></div>
-                                        </a>
-                                    </div>
-                                    <div class="cell finish status">Выполнен</div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="pagination">
-                            <div class="paginate">
-                                <a href="#" title="Назад"> <span class="icon prev"></span></a>
-                            </div>
-                            <div class="page"><a href="#">1</a></div>
-                            <div class="page"><a href="#">2</a></div>
-                            <div class="page"><a href="#">3</a></div>
-                            <div class="page current">4</div>
-                            <div class="page"><a href="#">5</a></div>
-                            <div class="page"><a href="#">1506</a></div>
-                            
-                            <div class="page"><a href="#">1509</a></div>
-                            <div class="page"><a href="#">1510</a></div>
-                            <div class="paginate">
-                                <a href="#" title="Вперёд"> <span class="icon next"></span></a>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </section>
             </main>
@@ -227,7 +156,8 @@
         <div class="wrap">
             <div class="box">
                 <div class="title">
-                    <h4>Мы принимаем к оплате:</h4> </div>
+                    <h4>Мы принимаем к оплате:</h4>
+                </div>
                 <ul>
                     <li>
                         <div class="icon visa"></div>
@@ -242,33 +172,40 @@
             </div>
             <div class="box">
                 <div class="title">
-                    <h4>Социальные сети:</h4> </div>
+                    <h4>Социальные сети:</h4>
+                </div>
                 <ul>
                     <li>
                         <a href="#">
-                            <div class="icon facebook"></div>Facebook </a>
+                            <div class="icon facebook"></div>Facebook
+                        </a>
                     </li>
                     <li>
                         <a href="#">
-                            <div class="icon vkontakte"></div>ВКонтакте </a>
+                            <div class="icon vkontakte"></div>ВКонтакте
+                        </a>
                     </li>
                     <li>
                         <a href="#">
-                            <div class="icon instagram"></div>Instagram </a>
+                            <div class="icon instagram"></div>Instagram
+                        </a>
                     </li>
                     <li>
                         <a href="#">
-                            <div class="icon twitter"></div>Twitter </a>
+                            <div class="icon twitter"></div>Twitter
+                        </a>
                     </li>
                     <li>
                         <a href="#">
-                            <div class="icon telegram"></div>Telegram </a>
+                            <div class="icon telegram"></div>Telegram
+                        </a>
                     </li>
                 </ul>
             </div>
             <div class="box">
                 <div class="title">
-                    <h4>Покупателям:</h4> </div>
+                    <h4>Покупателям:</h4>
+                </div>
                 <ul>
                     <li><a href="#">Доставка</a></li>
                     <li><a href="#">Оплата</a></li>
@@ -278,7 +215,8 @@
             </div>
             <div class="box">
                 <div class="title">
-                    <h4>Информация:</h4> </div>
+                    <h4>Информация:</h4>
+                </div>
                 <ul>
                     <li><a href="#">Контакты</a></li>
                     <li><a href="#">Условия конфиденциальности</a></li>
@@ -295,7 +233,8 @@
             <div class="box">
                 <div class="item">
                     <div class="title">
-                        <div class="icon brackets"></div>Корзина </div>
+                        <div class="icon brackets"></div>Корзина
+                    </div>
                     <div class="cart_row">
                         <div class="cart_pic">
                             <a href="#"><img src="images/10726397-1.jpg" alt=" "></a>
@@ -354,7 +293,8 @@
             <div class="box">
                 <div class="item">
                     <div class="title">
-                        <div class="icon favorite"></div>Понравилось </div>
+                        <div class="icon favorite"></div>Понравилось
+                    </div>
                     <div class="cart_row">
                         <div class="cart_pic">
                             <a href="#"><img src="images/10726397-1.jpg" alt=" "></a>
@@ -391,15 +331,16 @@
     <script src="js/jquery.tipsy.min.js"></script>
     <script type="text/javascript">
         $('[title]').tipsy({
-            arrowWidth: 10
-            , cls: null
-            , duration: 150
-            , offset: 7
-            , position: 'top-center'
-            , trigger: 'hover'
-            , onShow: null
-            , onHide: null
+            arrowWidth: 10,
+            cls: null,
+            duration: 150,
+            offset: 7,
+            position: 'top-center',
+            trigger: 'hover',
+            onShow: null,
+            onHide: null
         });
+
     </script>
     <script src="js/es.js"></script>
     <!-- конец -->
