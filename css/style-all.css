@@ -2283,5 +2283,8 @@ footer .box ul li .icon {
     /*! transform: scale(1.005); */
     box-shadow: 0 0 0px 3px var(--border);
     /*! translateY: (-1px); */
-    transform: translateY(-1px) scale(1.005);
+    transform: scale(1.05);
+}
+.brackets:hover, .favorites:hover {
+    filter: saturate(133%);
 }
