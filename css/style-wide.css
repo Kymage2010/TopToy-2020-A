@@ -124,13 +124,13 @@ header .wrap .icons {
     /*! margin-left: 0.75rem; */
     /*! margin-bottom: 1.5rem; */
     /*! background: aliceblue; */
-    margin: 0.75rem 0 1.5rem 0;
-    border-left: solid 1px #FF6E40;
-    padding-left: 0.75rem;
+    /*! margin: 1.5rem 0; */
+    /*! border-left: solid 1px #FF6E40; */
+    /*! padding-left: 0.75rem; */
 }
 
 .content .wrap aside .box .item #catalog ul li ul li {
-    margin-bottom: 0.75rem;
+    /*! margin-bottom: 1.5rem; */
 }
 
 .content .wrap aside .box .item #catalog ul li ul li a {
@@ -341,4 +341,9 @@ text-align: right;
 .content main section .lk .box .item .row .cell .icon {
     margin-left: 0;
     height: 2rem;
+}
+.content main .filters .filter-spec .item .group {
+
+    min-width: 25%;
+ 
 }

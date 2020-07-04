@@ -55,8 +55,8 @@ header .wrap .phone {
 
 .content .wrap aside .box .item #catalog ul {}
 
-.content .wrap aside .box .item #catalog ul li {
-    margin-bottom: 1.5rem;
+.content aside .box .item #catalog ul li {
+    /*! margin-bottom: 1.5rem; */
 }
 
 .content .wrap aside .box .item #catalog ul li a {
@@ -68,13 +68,13 @@ header .wrap .phone {
     /*! margin-left: 0.75rem; */
     /*! margin-bottom: 1.5rem; */
     /*! background: aliceblue; */
-    margin: 0.75rem 0 1.5rem 0;
+    /*! margin: 1.5rem 0; */
     border-left: solid 1px #FF6E40;
     padding-left: 0.75rem;
 }
 
 .content .wrap aside .box .item #catalog ul li ul li {
-    margin-bottom: 0.75rem;
+    margin-bottom: 1.5rem;
 }
 
 .content .wrap aside .box .item #catalog ul li ul li a {
