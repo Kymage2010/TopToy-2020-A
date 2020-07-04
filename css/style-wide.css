@@ -112,7 +112,7 @@ header .wrap .icons {
 .content .wrap aside .box .item #catalog ul {}
 
 .content .wrap aside .box .item #catalog ul li {
-    margin-bottom: 1.5rem;
+    /*! margin-bottom: 1.5rem; */
 }
 
 .content .wrap aside .box .item #catalog ul li a {
