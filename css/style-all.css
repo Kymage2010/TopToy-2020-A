@@ -189,10 +189,10 @@ h4 {
     border-radius: 1rem;
     font-weight: 400;
     font-size: 0.75rem;
+    transition: ease-in-out 0.3s;
 }
 
 #submit {
-    background: var(--orange);
     background: var(--green);
 }
 
@@ -2278,3 +2278,10 @@ footer .box ul li .icon {
     margin-bottom: 1.5rem;
 }
 .drop_down_list select{}
+.button:hover{
+    filter: saturate(133%);
+    /*! transform: scale(1.005); */
+    box-shadow: 0 0 0px 3px var(--border);
+    /*! translateY: (-1px); */
+    transform: translateY(-1px) scale(1.005);
+}
