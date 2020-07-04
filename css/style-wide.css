@@ -337,6 +337,18 @@ text-align: right;
 .content main section .lk .box .item .row .status:before {
     display: none;
 }
+.content main section .lk .box .item .row .bonus_old:before{
+     display: none;
+}
+.content main section .lk .box .item .row .bonus_add:before{
+    display: none;
+}
+.content main section .lk .box .item .row .bonus_pay:before{
+     display: none;
+}
+.content main section .lk .box .item .row .bonus_total:before{
+     display: none;
+}
 
 .content main section .lk .box .item .row .cell .icon {
     margin-left: 0;

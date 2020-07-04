@@ -621,6 +621,7 @@ header {
     /*! box-shadow: 0 -3px 6px 4px var(--icon); */
     /*! padding: 0.75rem 0; */
     /*! transition: ease-in-out 0.3s; */
+    margin-top: 0.75rem;
 }
 
 header .wrap {
@@ -687,7 +688,7 @@ header .wrap .icons {
     /*! border: solid 1px red; */
     border-radius: 1rem;
     /*! padding: 0.375rem; */
-    margin: 0.375rem;
+    margin: 0.375rem 0 0.375rem 0.375rem;
     flex: 0 1 auto;
     /*! align-self: center; */
     /*! align-content: center; */
@@ -2211,6 +2212,27 @@ footer .box ul li .icon {
 .content main section .lk .box .item .row .status:before {
     content: 'Статус:';
 }
+.content main section .lk .box .item .row .bonus_old:before{
+    content: 'Остаток';
+}
+.content main section .lk .box .item .row .bonus_add{
+    color: var(--green);
+}
+.content main section .lk .box .item .row .bonus_add:before{
+    content: 'Начислено:';
+}
+.content main section .lk .box .item .row .bonus_pay{
+    color: red;
+}
+.content main section .lk .box .item .row .bonus_pay:before{
+    content: 'Потрачено:';
+}
+.content main section .lk .box .item .row .bonus_total:before{
+    content: 'Осталось:';
+}
+
+
+
 
 .content main section .lk .box .item .row .cell:before {
     padding-right: 0.375rem;
