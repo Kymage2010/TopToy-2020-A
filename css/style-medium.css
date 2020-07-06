@@ -8,6 +8,7 @@ header .wrap .logo {
 
 header .wrap .logo img {
     max-width: 12rem;
+    width: 100%;
     
 }
 header .wrap .search {
