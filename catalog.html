@@ -32,7 +32,7 @@
             </div>
             <div class="search">
                 <div class="box">
-                    <form>
+                    <form name="form_search">
                         <input type="text" placeholder="Поиск товаров">
                         <button type="submit"></button>
                     </form>
@@ -155,7 +155,6 @@
                                             <li><a href="#">Блендеры и пароварки</a></li>
                                         </ul>
                                     </li>
-                                    
                                     <li class="parent"><a href="#">Коляски и автокресла</a>
                                         <ul class="sub_parent">
                                             <li><a href="#">Коляски</a></li>
@@ -163,10 +162,8 @@
                                             <li><a href="#">Бустеры</a></li>
                                             <li><a href="#">люльки и прогулочные блоки</a></li>
                                             <li><a href="#">Аксессуары</a></li>
-                                            
                                         </ul>
                                     </li>
-                                    
                                     <li class="parent"><a href="#">Товары для школы и обучения</a>
                                         <ul class="sub_parent">
                                             <li><a href="#">Рюкзаки, ранцы и сумки</a></li>
@@ -174,51 +171,36 @@
                                             <li><a href="#">Письменные принадлежности</a></li>
                                             <li><a href="#">Канцелярские принадлежности</a></li>
                                             <li><a href="#">Обучающие материалы</a></li>
-                                            
                                         </ul>
                                     </li>
                                     <li class="parent"><a href="#">Спортивные товары</a>
                                         <ul class="sub_parent">
                                             <li><a href="#">.....</a></li>
-                                            
-                                            
                                         </ul>
                                     </li>
                                     <li class="parent"><a href="#">Книги</a>
                                         <ul class="sub_parent">
                                             <li><a href="#">.....</a></li>
-                                            
-                                            
                                         </ul>
                                     </li>
                                     <li class="parent"><a href="#">Хобби и творчество</a>
                                         <ul class="sub_parent">
                                             <li><a href="#">.....</a></li>
-                                            
-                                            
                                         </ul>
                                     </li>
-                                    
                                     <li class="parent"><a href="#">Мебель</a>
                                         <ul class="sub_parent">
                                             <li><a href="#">.....</a></li>
-                                            
-                                            
                                         </ul>
                                     </li>
-                                    
                                     <li class="parent"><a href="#">Декор и освещение</a>
                                         <ul class="sub_parent">
                                             <li><a href="#">.....</a></li>
-                                            
-                                            
                                         </ul>
                                     </li>
                                     <li class="parent"><a href="#">Всё для игр</a>
                                         <ul class="sub_parent">
                                             <li><a href="#">.....</a></li>
-                                            
-                                            
                                         </ul>
                                     </li>
                                     <li class="parent"><a href="#">Электроника</a>
@@ -227,13 +209,9 @@
                                             <li><a href="#">Фотоаппараты</a></li>
                                             <li><a href="#">Телефоны</a></li>
                                             <li><a href="#">GPS трекеры</a></li>
-<li><a href="#">Радио-няня</a></li>
-                                            
-                                            
+                                            <li><a href="#">Радио-няня</a></li>
                                         </ul>
                                     </li>
-                                    
-                                    
                                 </ul>
                             </nav>
                         </div>
@@ -273,135 +251,147 @@
             </aside>
             <main>
                 <div class="filters">
-                    <div class="filter-all">
-                        <!-- Показываем всегда-->
-                        <div class="box">
-                            <div class="group">
-                                <div class="title">Кому:</div>
-                                <div class="filter">Мальчикам</div>
-                                <div class="filter active">Девочкам</div>
-                                <div class="filter">Родителям</div>
-                            </div>
-                            <div class="group">
-                                <div class="title">Возраст:</div>
-                                <div class="filter">0-0,5</div>
-                                <div class="filter">0,5-1</div>
-                                <div class="filter active">1-3</div>
-                                <div class="filter">3-5</div>
-                                <div class="filter">5-7</div>
-                                <div class="filter">7-12</div>
-                                <div class="filter">12+</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="filter-spec">
-                        <div class="box">
-                            <div class="bread">
-                                <ul>
-                                    <li><a href="#">Главная</a></li>
-                                    <li><a href="#">Игрушки и игры</a></li>
-                                    <li class="last">Конструкторы</li>
-                                </ul>
-                            </div>
-                            <div class="close_box">Параметры</div>
-                            <div class="item" id="filter_show">
+                    <form name="form_filters">
+                        <div class="filter-all">
+                            <div class="box">
                                 <div class="group">
-                                    <div class="title">Материал</div>
-                                    <label class="checkcontainer">Пластиковый
-                                        <input type="checkbox"> <span class="checkmark"></span> </label>
-                                    <label class="checkcontainer">Металлический
-                                        <input type="checkbox"> <span class="checkmark"></span> </label>
-                                    <label class="checkcontainer">Деревянный
-                                        <input type="checkbox"> <span class="checkmark"></span> </label>
-                                    <label class="checkcontainer">Бумажный
-                                        <input type="checkbox"> <span class="checkmark"></span> </label>
+                                    <div class="title">Кому:</div>
+                                    <label class="checkcontainer">
+                                        <input type="checkbox"> <span class="checkmark">Девочки</span> </label>
+                                    <label class="checkcontainer">
+                                        <input type="checkbox"> <span class="checkmark">Мальчики</span></label>
+                                    <label class="checkcontainer">
+                                        <input type="checkbox"> <span class="checkmark">Родителям</span> </label>
                                 </div>
                                 <div class="group">
-                                    <div class="title">Тип</div>
-                                    <label class="checkcontainer">Магнитный
-                                        <input type="checkbox"> <span class="checkmark"></span> </label>
-                                    <label class="checkcontainer">Электронный
-                                        <input type="checkbox"> <span class="checkmark"></span> </label>
-                                    <label class="checkcontainer">Липучка
-                                        <input type="checkbox"> <span class="checkmark"></span> </label>
-                                    <label class="checkcontainer">Кирпичики
-                                        <input type="checkbox"> <span class="checkmark"></span> </label>
-                                    <label class="checkcontainer">Мягкий
-                                        <input type="checkbox"> <span class="checkmark"></span> </label>
+                                    <div class="title">Возраст:</div>
+                                    <label class="checkcontainer">
+                                        <input type="checkbox"> <span class="checkmark">0-0,5</span> </label>
+                                    <label class="checkcontainer">
+                                        <input type="checkbox"> <span class="checkmark">0,5-1</span> </label>
+                                    <label class="checkcontainer">
+                                        <input type="checkbox"> <span class="checkmark">1-3</span> </label>
+                                    <label class="checkcontainer">
+                                        <input type="checkbox"> <span class="checkmark">3-5</span> </label>
+                                    <label class="checkcontainer">
+                                        <input type="checkbox"> <span class="checkmark">5-7</span> </label>
+                                    <label class="checkcontainer">
+                                        <input type="checkbox"> <span class="checkmark">7-12</span> </label>
+                                    <label class="checkcontainer">
+                                        <input type="checkbox"> <span class="checkmark">12+</span> </label>
+                                    
                                 </div>
-                                <div class="group">
-                                    <div class="title">Бренд</div>
-                                    <label class="checkcontainer">Disney
-                                        <input type="checkbox"> <span class="checkmark"></span> </label>
-                                    <label class="checkcontainer">Томик
-                                        <input type="checkbox"> <span class="checkmark"></span> </label>
-                                    <label class="checkcontainer">Чудо-дерево
-                                        <input type="checkbox"> <span class="checkmark"></span> </label>
-                                    <label class="checkcontainer">Uniwood
-                                        <input type="checkbox"> <span class="checkmark"></span> </label>
-                                    <label class="checkcontainer">Wood Trick
-                                        <input type="checkbox"> <span class="checkmark"></span> </label>
-                                    <label class="checkcontainer">Lemmmo
-                                        <input type="checkbox"> <span class="checkmark"></span> </label>
-                                </div>
-                                <div class="group">
-                                    <div class="title">Тематика</div>
-                                    <label class="checkcontainer">Техника
-                                        <input type="checkbox" checked="checked"> <span class="checkmark"></span> </label>
-                                    <label class="checkcontainer">Флора и фауна
-                                        <input type="checkbox"> <span class="checkmark"></span> </label>
-                                    <label class="checkcontainer">Дома и замки
-                                        <input type="checkbox"> <span class="checkmark"></span> </label>
-                                    <label class="checkcontainer">Фигурки
-                                        <input type="checkbox"> <span class="checkmark"></span> </label>
-                                    <label class="checkcontainer">Авиация
-                                        <input type="checkbox"> <span class="checkmark"></span> </label>
-                                    <label class="checkcontainer">Роботы
-                                        <input type="checkbox"> <span class="checkmark"></span> </label>
-                                    <label class="checkcontainer">Космос
-                                        <input type="checkbox"> <span class="checkmark"></span> </label>
-                                </div>
-                                <div class="group">
-                                    <div class="title">Страна изготовитель</div>
-                                    <label class="checkcontainer">Россия
-                                        <input type="checkbox" checked="checked"> <span class="checkmark"></span> </label>
-                                    <label class="checkcontainer">Китай
-                                        <input type="checkbox"> <span class="checkmark"></span> </label>
-                                    <label class="checkcontainer">Украина
-                                        <input type="checkbox"> <span class="checkmark"></span> </label>
-                                    <label class="checkcontainer">Беларусь
-                                        <input type="checkbox"> <span class="checkmark"></span> </label>
-                                    <label class="checkcontainer">Таиланд
-                                        <input type="checkbox"> <span class="checkmark"></span> </label>
-                                </div>
-                                <div class="group">
-                                    <div class="title">Особенности</div>
-                                    <label class="checkcontainer">Заводной механизм
-                                        <input type="checkbox" checked="checked"> <span class="checkmark"></span> </label>
-                                    <label class="checkcontainer">На батарейках
-                                        <input type="checkbox"> <span class="checkmark"></span> </label>
-                                    <label class="checkcontainer">Музыкальный
-                                        <input type="checkbox"> <span class="checkmark"></span> </label>
-                                    <label class="checkcontainer">Подсветка
-                                        <input type="checkbox"> <span class="checkmark"></span> </label>
-                                </div>
-                                <div class="group">
-                                    <div class="title">Развитие навыков</div>
-                                    <label class="checkcontainer">Моторика
-                                        <input type="checkbox" checked="checked"> <span class="checkmark"></span> </label>
-                                    <label class="checkcontainer">Воображение
-                                        <input type="checkbox"> <span class="checkmark"></span> </label>
-                                    <label class="checkcontainer">Логика
-                                        <input type="checkbox"> <span class="checkmark"></span> </label>
-                                    <label class="checkcontainer">Внимание
-                                        <input type="checkbox"> <span class="checkmark"></span> </label>
-                                </div>
-                                <div class="accept">
-                                    <input class="button" name="submit" id="submit" type="submit" value="Показать">
-                                    <input class="button" name="reset" id="reset" type="reset" value="Сбросить"> </div>
                             </div>
                         </div>
-                    </div>
+                        <div class="filter-spec">
+                            <div class="box">
+                                <div class="bread">
+                                    <ul>
+                                        <li><a href="#">Главная</a></li>
+                                        <li><a href="#">Игрушки и игры</a></li>
+                                        <li class="last">Конструкторы</li>
+                                    </ul>
+                                </div>
+                                <div class="close_box">Параметры</div>
+                                <div class="item" id="filter_show">
+                                    <div class="group">
+                                        <div class="title">Материал</div>
+                                        <label class="checkcontainer">Пластиковый
+                                            <input type="checkbox"> <span class="checkmark"></span> </label>
+                                        <label class="checkcontainer">Металлический
+                                            <input type="checkbox"> <span class="checkmark"></span> </label>
+                                        <label class="checkcontainer">Деревянный
+                                            <input type="checkbox"> <span class="checkmark"></span> </label>
+                                        <label class="checkcontainer">Бумажный
+                                            <input type="checkbox"> <span class="checkmark"></span> </label>
+                                    </div>
+                                    <div class="group">
+                                        <div class="title">Тип</div>
+                                        <label class="checkcontainer">Магнитный
+                                            <input type="checkbox"> <span class="checkmark"></span> </label>
+                                        <label class="checkcontainer">Электронный
+                                            <input type="checkbox"> <span class="checkmark"></span> </label>
+                                        <label class="checkcontainer">Липучка
+                                            <input type="checkbox"> <span class="checkmark"></span> </label>
+                                        <label class="checkcontainer">Кирпичики
+                                            <input type="checkbox"> <span class="checkmark"></span> </label>
+                                        <label class="checkcontainer">Мягкий
+                                            <input type="checkbox"> <span class="checkmark"></span> </label>
+                                    </div>
+                                    <div class="group">
+                                        <div class="title">Бренд</div>
+                                        <label class="checkcontainer">Disney
+                                            <input type="checkbox"> <span class="checkmark"></span> </label>
+                                        <label class="checkcontainer">Томик
+                                            <input type="checkbox"> <span class="checkmark"></span> </label>
+                                        <label class="checkcontainer">Чудо-дерево
+                                            <input type="checkbox"> <span class="checkmark"></span> </label>
+                                        <label class="checkcontainer">Uniwood
+                                            <input type="checkbox"> <span class="checkmark"></span> </label>
+                                        <label class="checkcontainer">Wood Trick
+                                            <input type="checkbox"> <span class="checkmark"></span> </label>
+                                        <label class="checkcontainer">Lemmmo
+                                            <input type="checkbox"> <span class="checkmark"></span> </label>
+                                    </div>
+                                    <div class="group">
+                                        <div class="title">Тематика</div>
+                                        <label class="checkcontainer">Техника
+                                            <input type="checkbox" checked="checked"> <span class="checkmark"></span> </label>
+                                        <label class="checkcontainer">Флора и фауна
+                                            <input type="checkbox"> <span class="checkmark"></span> </label>
+                                        <label class="checkcontainer">Дома и замки
+                                            <input type="checkbox"> <span class="checkmark"></span> </label>
+                                        <label class="checkcontainer">Фигурки
+                                            <input type="checkbox"> <span class="checkmark"></span> </label>
+                                        <label class="checkcontainer">Авиация
+                                            <input type="checkbox"> <span class="checkmark"></span> </label>
+                                        <label class="checkcontainer">Роботы
+                                            <input type="checkbox"> <span class="checkmark"></span> </label>
+                                        <label class="checkcontainer">Космос
+                                            <input type="checkbox"> <span class="checkmark"></span> </label>
+                                    </div>
+                                    <div class="group">
+                                        <div class="title">Страна изготовитель</div>
+                                        <label class="checkcontainer">Россия
+                                            <input type="checkbox" checked="checked"> <span class="checkmark"></span> </label>
+                                        <label class="checkcontainer">Китай
+                                            <input type="checkbox"> <span class="checkmark"></span> </label>
+                                        <label class="checkcontainer">Украина
+                                            <input type="checkbox"> <span class="checkmark"></span> </label>
+                                        <label class="checkcontainer">Беларусь
+                                            <input type="checkbox"> <span class="checkmark"></span> </label>
+                                        <label class="checkcontainer">Таиланд
+                                            <input type="checkbox"> <span class="checkmark"></span> </label>
+                                    </div>
+                                    <div class="group">
+                                        <div class="title">Особенности</div>
+                                        <label class="checkcontainer">Заводной механизм
+                                            <input type="checkbox" checked="checked"> <span class="checkmark"></span> </label>
+                                        <label class="checkcontainer">На батарейках
+                                            <input type="checkbox"> <span class="checkmark"></span> </label>
+                                        <label class="checkcontainer">Музыкальный
+                                            <input type="checkbox"> <span class="checkmark"></span> </label>
+                                        <label class="checkcontainer">Подсветка
+                                            <input type="checkbox"> <span class="checkmark"></span> </label>
+                                    </div>
+                                    <div class="group">
+                                        <div class="title">Развитие навыков</div>
+                                        <label class="checkcontainer">Моторика
+                                            <input type="checkbox" checked="checked"> <span class="checkmark"></span> </label>
+                                        <label class="checkcontainer">Воображение
+                                            <input type="checkbox"> <span class="checkmark"></span> </label>
+                                        <label class="checkcontainer">Логика
+                                            <input type="checkbox"> <span class="checkmark"></span> </label>
+                                        <label class="checkcontainer">Внимание
+                                            <input type="checkbox"> <span class="checkmark"></span> </label>
+                                    </div>
+                                    <div class="accept">
+                                        <input class="button" name="submit" id="submit" type="submit" value="Показать">
+                                        <input class="button" name="reset" id="reset" type="reset" value="Сбросить"> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
                 <section>
                     <div class="box">
