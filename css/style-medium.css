@@ -5,8 +5,10 @@ header .wrap .logo {
 	width: 33.3333%;
 	
 }
+
 header .wrap .logo img {
-    max-width: auto;
+    max-width: 12rem;
+    
 }
 header .wrap .search {
 	width: 66.6666%;

@@ -4,8 +4,12 @@ header {
 
 header .wrap .logo {
     width: 25%;
+    
 }
-
+header .wrap .logo img {
+    max-width: 12rem;
+    
+}
 header .wrap .search {
     width: 41.6666%;
 }
