@@ -107,8 +107,8 @@ p a {
 img {
     max-width: 100%;
     display: block;
-    /*! object-fit: cover; */
-    /*! width: 100%; */
+    object-fit: cover;
+    /*! width: auto; */
     /*! height: 100%; */
 }
 
@@ -592,6 +592,7 @@ h4 {
     margin-left: auto;
     margin-right: auto;
     padding-top: 0.75rem;
+    max-height: 8.5rem;
 }
 
 .box .item .info {
@@ -732,6 +733,7 @@ header .wrap .icons {
 
 .content main section .show .slider .box .item .pic a img {
     height: calc(16rem + 3px);
+    max-height: calc(16rem + 3px);
 }
 
 .content main section .show .right {
@@ -1120,6 +1122,8 @@ header .wrap .icons {
 .review .box .item .rev .pic {
     /*! width: 33.3333%; */
     margin-top: 0.75rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .review .box .item .rev .anons {
