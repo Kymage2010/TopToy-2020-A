@@ -59,7 +59,7 @@ header .wrap .icons {
 
 .content main section .show .right .show_item .box .item {
     display: flex;
-    align-items: center;
+    /*! align-items: center; */
 }
 
 .content main section .show .right .show_item .box .item .pic {
@@ -77,9 +77,9 @@ header .wrap .icons {
 }
 
 .show_item .box .item .pic a img {
-    /*! height: 10rem; */
+    height: auto;
     /*! overflow: hidden; */
-    /*! width: 15rem; */
+    /*! width: 100%; */
 }
 
 .price {
