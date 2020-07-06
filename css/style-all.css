@@ -370,6 +370,14 @@ h4 {
     background-size: 60%;
 }
 
+.RST {
+    background: url(../images/icon_RST.svg) no-repeat center center;
+}
+
+.EAC {
+    background: url(../images/icon_EAC.svg) no-repeat center center;
+}
+
 .icon {
     height: 2rem;
     width: 2rem;
