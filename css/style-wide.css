@@ -77,7 +77,7 @@ header .wrap .icons {
 }
 
 .show_item .box .item .pic a img {
-    height: auto;
+    /*! height: auto; */
     /*! overflow: hidden; */
     /*! width: 100%; */
 }
