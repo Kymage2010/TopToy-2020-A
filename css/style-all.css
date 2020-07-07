@@ -378,6 +378,21 @@ h4 {
     background: url(../images/icon_EAC.svg) no-repeat center center;
 }
 
+.bonus{color: var(--orange);font-weight: 500;/*! background: antiquewhite; */display: inline-flex;margin-left: auto;border: solid 1px var(--border);padding: 0.375rem 0 0.375rem 0.375rem;border-radius: 0.375rem;background: var(--back);}
+.bonus:before{
+    content: '+';
+    color: var(--orange);
+    /*! margin-right: 0.375rem; */
+}
+.bonus:after{
+    content: ' ';
+    background: url(../images/icon_bonus.svg) no-repeat center center;
+    width: 2rem;
+    display: block;
+    height: 1rem;
+}
+
+
 .icon {
     height: 2rem;
     width: 2rem;
@@ -1616,7 +1631,7 @@ header .wrap .icons {
 }
 
 .shopping_cart .wrap .item .cart_row .cart_price .price:before {
-    content: 'Ð¦ÐµÐ½Ð°:';
+    content: 'Цена';
     font-weight: 300;
     padding-right: 0.375rem;
     width: 100%;
@@ -1641,7 +1656,7 @@ header .wrap .icons {
 }
 
 .shopping_cart .wrap .item .cart_row .cart_count .count:before {
-    content: 'ÐšÐ¾Ð»-Ð²Ð¾:';
+    content: 'Кол-во';
     padding-right: calc(0.375rem + 0.25rem);
     width: 100%;
     font-weight: 300;
@@ -1684,7 +1699,7 @@ header .wrap .icons {
 }
 
 .shopping_cart .wrap .item .cart_row .cart_total .price:before {
-    content: 'Ð˜Ñ‚Ð¾Ð³Ð¾:';
+    content: 'Итого:';
     font-size: 0.875rem;
     font-weight: 300;
     padding-right: 0.375rem;
