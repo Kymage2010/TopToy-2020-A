@@ -378,7 +378,7 @@ h4 {
     background: url(../images/icon_EAC.svg) no-repeat center center;
 }
 
-.bonus{color: var(--orange);font-weight: 500;/*! background: antiquewhite; */display: inline-flex;margin-left: auto;border: solid 1px var(--border);padding: 0.375rem 0 0.375rem 0.375rem;border-radius: 0.375rem;background: var(--back);}
+.bonus{color: var(--orange);font-weight: 500;/*! background: antiquewhite; */display: inline-flex;margin-left: 0.375rem;border: solid 1px var(--border);padding: 0.375rem 0 0.375rem 0.375rem;border-radius: 0.375rem;background: var(--back);}
 .bonus:before{
     content: '+';
     color: var(--orange);
