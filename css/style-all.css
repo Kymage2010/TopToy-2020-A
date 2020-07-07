@@ -77,6 +77,7 @@ fieldset {
     padding: 0;
     display: block;
     border: none;
+    font-size: 0.75rem;
 }
 
 input[type="number"] {
@@ -1128,7 +1129,7 @@ header .wrap .icons {
 }
 
 .review .box .item .rev {
-    margin: 1.5rem;
+    margin: 1.5rem 1.5rem 3rem 1.5rem;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -1154,8 +1155,8 @@ header .wrap .icons {
     /*! width: 66.66666%; */
     /*! font-size: 0.75rem; */
     /*! padding-left: 0.75rem; */
-    margin-top: 0.75rem;
-    font-weight: 300;
+    /*! padding-top: 0.75rem; */
+    /*! font-weight: 300; */
     line-height: 1.2rem;
 }
 
@@ -1163,6 +1164,7 @@ header .wrap .icons {
     text-decoration: underline dotted 1px var(--icon);
     /*! color: var(--icon); */
     display: inline-block;
+    padding-top: 0.75rem;
 }
 
 .pagination {
