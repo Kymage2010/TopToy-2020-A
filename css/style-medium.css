@@ -1,45 +1,44 @@
-header {
-	/*! background: #C9C; */
-}
 header .wrap .logo {
-	width: 33.3333%;
-	
+    width: 33.3333%;
 }
 
 header .wrap .logo img {
     max-width: 12rem;
     width: 100%;
-    
 }
-header .wrap .search {
-	width: 66.6666%;
-}
-header .wrap .icons {
 
-	width: calc(66.6666% - 0.75rem);
+header .wrap .search {
+    width: 66.6666%;
 }
+
+header .wrap .icons {
+    width: calc(66.6666% - 0.75rem);
+}
+
 header .wrap .phone {
     width: 33.333%;
 }
+
 .content .wrap aside {
-	width: 33.3333%;
+    width: 33.3333%;
 }
 
 .content .wrap main {
-	width: 66.6666%;
+    width: 66.6666%;
 }
-
 
 .content main section .box {
-	width: 50%;
+    width: 50%;
 }
+
 .content main section .box.medium {
     display: block;
 }
+
 .price {
-	width: auto
+    width: auto
 }
-/*меню*/
+
 .menu_adaptive {
     display: block;
     position: initial;
@@ -48,30 +47,17 @@ header .wrap .phone {
     max-width: 100%;
     margin: 0;
 }
+
 .content .wrap aside .title_nav .box .icon.burger {
     display: none;
 }
+
 .content .wrap aside .box .item #catalog {
     padding: 1.5rem;
     font-size: 1rem;
 }
 
-.content .wrap aside .box .item #catalog ul {}
-
-.content aside .box .item #catalog ul li {
-    /*! margin-bottom: 1.5rem; */
-}
-
-.content .wrap aside .box .item #catalog ul li a {
-    /*! text-decoration: underline; */
-}
-
 .content .wrap aside .box .item #catalog ul li ul {
-    /*! margin-top: 0.75rem; */
-    /*! margin-left: 0.75rem; */
-    /*! margin-bottom: 1.5rem; */
-    /*! background: aliceblue; */
-    /*! margin: 1.5rem 0; */
     border-left: solid 1px #FF6E40;
     padding-left: 0.75rem;
 }
@@ -86,94 +72,88 @@ header .wrap .phone {
 }
 
 .content .wrap aside .menu_adaptive .box .item #catalog .accord .parent .active {
-	color:var(--orange);
-	text-decoration: none;
+    color: var(--orange);
+    text-decoration: none;
 }
+
 .review {
     display: block;
 }
+
 .bread {
     margin: 0.75rem 0;
     line-height: calc(0.75rem + 2px);
 }
-.content main section .card .photo {
-   /*! width: 41.6666%; */ 
-   
-   
+
+.content main section .card .info_tab nav {
+    display: flex;
+    flex-flow: row wrap;
 }
 
-.content main section .card .desc {
-    /*! width: 58.3333%; */
-    
+.pagination {
+    max-width: 100%;
+    justify-content: space-between;
 }
-.content main section .card .info_tab nav{
-display: flex;
-flex-flow: row wrap;
-}
-.pagination{
-max-width: 100%;
-justify-content: space-between;
-}
+
 .shopping_cart .wrap .item .cart_row .cart_pic {
-
     width: 8rem;
     margin: 0;
 }
-.shopping_cart .wrap .item .cart_row .cart_name {
 
-    /*! width: max-content; */
+.shopping_cart .wrap .item .cart_row .cart_name {
     max-width: 10rem;
     margin-right: 0.75rem;
 }
-.shopping_cart .wrap .item .cart_row{justify-content: space-between;/*! align-items: center; */padding-bottom: 0.75rem;margin-bottom: 0.75rem;}
+
+.shopping_cart .wrap .item .cart_row {
+    justify-content: space-between;
+    padding-bottom: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
 .shopping_cart .wrap .item .cart_row .cart_price {
-    
-   
     width: auto;
     min-width: 6rem;
 }
-.shopping_cart .wrap .item .cart_row .cart_count {
 
+.shopping_cart .wrap .item .cart_row .cart_count {
     width: auto;
     margin-left: auto;
 }
-.shopping_cart .wrap .item .cart_row .cart_total {
 
+.shopping_cart .wrap .item .cart_row .cart_total {
     width: auto;
     margin-left: auto;
     min-width: 7rem;
     margin: 0 0 0 auto;
 }
-.shopping_cart .wrap .item .title{
-/*! background: blue; */
-margin-bottom: 0.75rem;
+
+.shopping_cart .wrap .item .title {
+    margin-bottom: 0.75rem;
 }
+
 .shopping_cart .wrap .item .cart_row .cart_count .count::before {
-padding-left: 0.75rem;
-}
-.shopping_cart .wrap .item .cart_row .cart_total .price::before {
-
-
     padding-left: 0.75rem;
-
 }
-.shopping_cart .wrap .item .cart_row .cart_del {
 
-    top: -0.75rem;}
+.shopping_cart .wrap .item .cart_row .cart_total .price::before {
+    padding-left: 0.75rem;
+}
+
+.shopping_cart .wrap .item .cart_row .cart_del {
+    top: -0.75rem;
+}
+
 .shopping_cart .wrap .item .shopping_total {
-    
-    /*! justify-content: center; */
-    
     margin-left: auto;
     max-width: 10rem;
     margin-right: auto;
-}footer .wrap .box {
+}
+
+footer .wrap .box {
     width: 33.3333%;
 }
-.content main section .order .service{
 
-
-
-
-width: 50%;
+.content main section .order .service {
+    width: 50%;
 }
