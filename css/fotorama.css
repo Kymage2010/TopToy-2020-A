@@ -491,12 +491,12 @@
 .fotorama__arr--prev {
  /*! left:2px; */
  /*! background-position:0 0 */
- background: url(../images/icon_arrow_left.svg) var(--orange) no-repeat center center;
+ background: url(../images/icon_arrow_left.svg) var(--icon) no-repeat center center;
 }
 .fotorama__arr--next {
  right:0;
  background-position:-32px 0;
- background: url(../images/icon_arrow_right.svg) var(--orange) no-repeat center center;
+ background: url(../images/icon_arrow_right.svg) var(--icon) no-repeat center center;
 }
 .fotorama__arr--disabled {
  pointer-events:none;
