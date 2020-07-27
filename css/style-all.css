@@ -958,6 +958,7 @@ header .wrap .icons {
 
 .bread ul {
     display: flex;
+    flex-flow: row wrap;
 }
 
 .bread ul li {
