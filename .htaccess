@@ -83,12 +83,12 @@ RewriteRule ([^/]+)\.site$ /site/?id=$1 [QSA]
 RewriteCond %{HTTP_HOST} ^www\.(.*)$
 RewriteRule ^(.*)$ https://%1/$1 [L,R=301]
 
-#php_value display_errors On
+php_value display_errors On
 #RewriteRule .* - [R=404,L]
 #ErrorDocument 404 /index.php
 Options All -Indexes
 #php_value opcache.enable=Off
-php_value upload_tmp_dir /var/tmp
+#php_value upload_tmp_dir /var/tmp
 php_value max_file_uploads 100M
 php_value post_max_size 100M
 php_value upload_max_filesize 100M
