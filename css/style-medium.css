@@ -91,8 +91,8 @@ header .wrap .phone {
 }
 
 .pagination {
-    max-width: 100%;
-    justify-content: space-between;
+    /*! max-width: 100%; */
+    /*! justify-content: space-between; */
 }
 
 .shopping_cart .wrap .item .cart_row .cart_pic {

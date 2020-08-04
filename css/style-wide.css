@@ -115,8 +115,8 @@ header .wrap .icons {
 }
 
 .pagination {
-    max-width: 66.6666%;
-    justify-content: space-between;
+    /*! max-width: 66.6666%; */
+    /*! justify-content: space-between; */
 }
 
 .shopping_cart .wrap .item .cart_row .cart_pic {

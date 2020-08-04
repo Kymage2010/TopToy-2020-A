@@ -1021,8 +1021,8 @@ header .wrap .icons {
     margin: 0.75rem auto;
     flex-flow: row wrap;
     justify-content: center;
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
+    padding-left: 0.375rem;
+    padding-right: 0.375rem;
 }
 
 .pagination .page {
@@ -1034,6 +1034,8 @@ header .wrap .icons {
     font-size: 0.75rem;
     font-weight: 300;
     background: white;
+    margin-left: 0.375rem;
+    margin-right: 0.375rem;
 }
 
 .pagination .page.current {
@@ -1043,14 +1045,18 @@ header .wrap .icons {
 
 .pagination .paginate {
     height: 2rem;
+    margin-left: 0.375rem;
+    margin-right: 0.375rem;
 }
 
 .pagination .paginate .icon.prev {
     background: url(../images/icon_page_left.svg) var(--icon) no-repeat center center;
+    display: block;
 }
 
 .pagination .paginate .icon.next {
     background: url(../images/icon_page_right.svg) var(--icon) no-repeat center center;
+    display: block;
 }
 
 .checkcontainer {
