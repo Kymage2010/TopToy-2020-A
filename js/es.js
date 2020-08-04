@@ -12,6 +12,7 @@ $(document).ready(function () {
         , filterShow = parseInt(getcookie("openTopFilter"))
         , $close_box = $(".close_box")
         , $filter_show = $("#filter_show");
+
     $('ul.accord > li.parent > a').click(function (e) {
         var $child = $(this).next('.sub_parent');
         if ($child.is("ul")) {
@@ -42,6 +43,7 @@ $(document).ready(function () {
             $md.addClass("show");
         }
     });
+    $(li[menuOpenItem]).find("a").click();
 
     $close_box.on("click", function(){
         let $filter = $("#filter_show");
@@ -74,6 +76,26 @@ $(document).ready(function () {
         trigger: 'hover',
         onShow: null,
         onHide: null
+    });
+
+    $('.fotorama').fotorama({
+        ratio: 16 / 9,
+        allowfullscreen: true,
+        nav: 'thumbs',
+        navwidth: '100%',
+        loop: true, 
+		//thumbwidth: '160',
+        click: false, 
+		//thumbheight: 90,
+        //thumbmargin: 16,
+        //thumbborderwidth: '1',
+		//fit: 'cover',
+		width: '100%',
+    });
+
+    $('[data-ft]').flexTabs({
+        breakpoint: 650,
+        collapsible: false,
     });
     /*header stick*/
     // function Header() {
