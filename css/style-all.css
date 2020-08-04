@@ -293,6 +293,7 @@ h4 {
     background: url(../images/icon_sertif.svg) var(--icon) no-repeat center center;
     margin-right: 0.75rem;
     background-size: 75%;
+    min-width: 2rem;
 }
 
 .return {
@@ -718,6 +719,7 @@ header .wrap .icons {
     display: flex;
     align-items: center;
     min-width: 50%;
+    /*! flex-flow: row wrap; */
 }
 
 .content main section .card .box .item .info_text .param a {
@@ -1231,27 +1233,33 @@ header .wrap .icons {
 }
 
 .ft-contents .param {
-    position: relative;
-    width: 50%;
-    margin-bottom: 0.75rem;
-    max-width: 18rem;
+    /*! position: relative; */
+    /*! width: 50%; */
+    margin-bottom: 1rem;
+    /*! max-width: 18rem; */
+    /*! display: flex; */
+    /*! min-width: 18rem; */
+    /*! background: antiquewhite; */
 }
 
 .ft-contents .param span {
     font-weight: 400;
-    position: absolute;
-    left: 100%;
-    width: 58.3333%;
+    /*! position: absolute; */
+    /*! left: 18rem; */
+    /*! width: 100%; */
+    /*! background: aquamarine; */
 }
 
-.ft-contents .param:after {
-    border-bottom: 1px dashed var(--border);
-    bottom: 0;
-    content: '';
-    display: block;
-    left: 0;
-    position: absolute;
-    width: 100%;
+.ft-contents .param span::before {
+    /*! border-bottom: 1px dashed var(--border); */
+    /*! bottom: 0; */
+    content: ':';
+    display: inline-block;
+    /*! left: 0; */
+    /*! position: absolute; */
+    width: 1rem;
+    /*! margin-right: 0.375rem; */
+    /*! background: aqua; */
 }
 
 .feedback {
