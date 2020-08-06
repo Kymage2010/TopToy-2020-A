@@ -17,7 +17,7 @@
  right:0;
  left:0;
  bottom:0;
- background: var(--border);
+ background: white;
 }
 .fotorama--fullscreen,
 .fotorama__img {
@@ -161,7 +161,7 @@
 .fotorama__fullscreen-icon,
 .fotorama__video-close,
 .fotorama__video-play {
- /*! background:url(fotorama.png) no-repeat; */
+ background:url(fotorama.png) no-repeat;
  margin: 0.75rem;
 }
 @media (-webkit-min-device-pixel-ratio:1.5),(min-resolution:2dppx) {
@@ -248,7 +248,7 @@
 }
 .fotorama__stage__frame.fotorama__active {
  z-index:8;
- background: var(--border);
+ background: white;
 }
 .fotorama__wrap--fade .fotorama__stage__frame {
  display:none
