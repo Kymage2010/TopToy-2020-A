@@ -811,6 +811,30 @@ header .wrap .icons {
     padding-bottom: 1rem;
     line-height: 1.5rem;
     font-weight: 300;
+    width: 100%;
+}
+.content main section .card .info_text ol ol{
+	padding-left:3rem;
+}
+.content main section .card .info_text ol{
+	display: list-item;
+padding: 0.75rem 0;
+list-style: none;
+counter-reset: li;
+	
+}
+.content main section .card .info_text ol li h4{
+	display:inline;
+}
+.content main section .card .info_text ol li {
+	margin-bottom: 0.75rem;
+line-height: 1.5rem;
+font-weight: 300;
+}
+.content main section .card .info_text ol li:before{
+	counter-increment: li;
+content: counters(li,".") ". ";
+	font-weight: 500;
 }
 
 .content main section .card .info_text h1,
