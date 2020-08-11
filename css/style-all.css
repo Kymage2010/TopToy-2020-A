@@ -703,7 +703,7 @@ header .wrap .icons {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
-    margin-top: 2px;
+    /*! margin-top: 2px; */
 }
 
 .content main section .card .box {
@@ -813,6 +813,12 @@ header .wrap .icons {
     font-weight: 300;
     width: 100%;
 }
+.content main section .card .info_text p a, .content main section .card .info_text li a {
+    display: inline;
+    color: var(--icon);
+    font-weight: 500;
+    border-bottom: dotted 1px var(--orange);
+}
 .content main section .card .info_text ol ol{
 	padding-left:3rem;
 }
@@ -831,6 +837,7 @@ counter-reset: li;
 line-height: 1.5rem;
 font-weight: 300;
 }
+
 .content main section .card .info_text ol li:before{
 	counter-increment: li;
 content: counters(li,".") ". ";
@@ -2232,3 +2239,25 @@ footer .box ul li .icon {
     width: 2rem;
     cursor: pointer;
 }
+.fly {
+    background: var(--border);
+    font-size: 0.75rem;
+    line-height: 1.2rem;
+    display: none;
+    color: #424242;
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+    width: 100%;
+    box-shadow: 0 0 3 3 black;
+    -webkit-box-shadow: 0 -3px 6px -3px rgba(0,0,0,0.5);
+    box-shadow: 0 -3px 6px -3px rgba(0,0,0,0.5);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px -4px 8px 0px;
+}
+.fly .box{text-align: center;width: 100%;font-size: 0.85rem;padding-bottom: 1.5rem;font-weight: 300;}
+.fly .box p a{
+	display: inline;
+	text-decoration: underline;
+}
+.fly .box p {margin: 1rem 0 2rem 0;}
+.fly .box .button {max-width: 6rem;margin-left: auto;margin-right: auto;line-height: 2rem;}
